@@ -8,13 +8,13 @@ export default function BackHome() {
   const [button, setButton] = useState(false);
 
   useEffect(() => {
-    (pathname === '/50projects-react') ?
+    (pathname === '/50projects-react/' || pathname === '/50projects-react') ?
       setButton(false) : setButton(true);
   }, [pathname]);
 
 
   const backHome = () => {
-    navigate('/50projects-react');
+    navigate('/50projects-react/');
   };
 
   return (
