@@ -12,7 +12,6 @@ export default function BackHome() {
       setButton(false) : setButton(true);
   }, [pathname]);
 
-
   const backHome = () => {
     navigate('/50projects-react/');
   };
