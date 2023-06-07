@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import './BackHome.css';
 import { useEffect, useState } from 'react';
+import './BackHome.css';
 
 export default function BackHome() {
   const navigate = useNavigate();
@@ -8,12 +8,9 @@ export default function BackHome() {
   const [button, setButton] = useState(null);
 
   useEffect(() => {
-    if (pathname === '/50projects-react') {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  }, [pathname])
+    (pathname === '/50projects-react') ?
+      setButton(false) : setButton(true);
+  }, [pathname]);
 
 
   const backHome = () => {
