@@ -10,12 +10,13 @@ import ScrollAnimation from './pages/06scroll-animation/ScrollAnimation';
 import SplitLandingPage from './pages/07split-landing-page/SplitLandingPage';
 import FormInputWave from './pages/08form-input-wave/FormInputWave';
 import './styles/reset.css';
-import './styles/index.css';
+import BackHome from './components/BackHome';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    {/* <App /> */}
+    <BackHome />
     <Routes>
+      <Route path='*' element={<App />} />
       <Route path='/50projects-react' element={<App />} />
       <Route path='/50projects-react/pages/01expanding-cards' element={<ExpandingCards />} />
       <Route path='/50projects-react/pages/02progress-steps' element={<ProgressSteps />} />

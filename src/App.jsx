@@ -6,7 +6,6 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Oi</h1>
       <NavLink className='item' to='./pages/01expanding-cards/'>ExpandingCards</NavLink>
       <NavLink className='item' to='./pages/02progress-steps/'>ProgressSteps</NavLink>
       <NavLink className='item' to='./pages/03rotating-nav-animation/'>RotatingNavAnimation</NavLink>
