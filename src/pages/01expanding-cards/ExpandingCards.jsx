@@ -1,6 +1,23 @@
+import { useEffect } from 'react';
 import './ExpandingCards.css';
 
 export default function ExpandingCards() {
+
+  function toggleImage() {
+    const img = document.querySelectorAll('.panel');
+
+    img.forEach(element => {
+      element.onclick = () => {
+        img.forEach(item => item.classList.remove('active')); // Remover a classe 'active' de todos os elementos
+        element.classList.add('active'); // Adicionar a classe 'active' apenas ao elemento clicado
+      };
+    })
+  }
+
+  useEffect(() => {
+    toggleImage();
+  }, [])
+
   return (
     <>
       <div className="container-01">
