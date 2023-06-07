@@ -8,7 +8,7 @@ export default function ExpandingCards() {
 
     img.forEach(element => {
       element.onclick = () => {
-        img.forEach(item => item.classList.remove('active')); // Remover a classe 'active' de todos os elementos
+        img.forEach(item => item.classList.remove('active')); // Remover a classe 'active' de todos elementos
         element.classList.add('active'); // Adicionar a classe 'active' apenas ao elemento clicado
       };
     })
@@ -16,7 +16,7 @@ export default function ExpandingCards() {
 
   useEffect(() => {
     toggleImage();
-  }, [])
+  }, []);
 
   return (
     <>
