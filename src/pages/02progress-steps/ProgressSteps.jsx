@@ -1,3 +1,4 @@
+import './ProgressSteps.css';
 
 export default function ProgressSteps() {
   return (
