@@ -13,7 +13,7 @@ export default function ProgressSteps() {
           <div className="circle">4</div>
         </div>
 
-        <div className="btn-container">
+        <div>
           <button className="btn" id="prev" disabled>Prev</button>
           <button className="btn" id="next">Next</button>
         </div>

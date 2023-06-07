@@ -12,7 +12,8 @@
   position: relative;
   margin-bottom: 3rem;
   max-width: 100%;
-  width: 35rem;
+  width: 350px;
+  /* width: 80%; */
 }
 .progress-container::before {
   content: "";
@@ -73,4 +74,11 @@
 .btn:disabled {
   background-color: #383838;
   cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .progress-container {
+    width: 100%;
+    /* padding: 0 1rem; */
+  }
 }
