@@ -4,7 +4,7 @@ body {
   /* border: 4px solid rgb(0, 255, 132); */
 }
 * {
-  /* outline: 2px solid rgba(184, 13, 13, 0.462); */
+  outline: 2px solid rgba(184, 13, 13, 0.462);
 }
 #root {
   max-width: 1280px;
@@ -48,46 +48,4 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   /* background: linear-gradient(to bottom, #b4f3e975, #f4d6cc67, #f7e0b23c); */
   color: #333;
-}
-
-/* || Botao voltar */
-.back {
-  color: #333;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  border-radius: var(--border-radius);
-  margin: 1rem;
-}
-.back {
-  display: flex;
-  height: 3em;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-  background-color: #eeeeee4b;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  transition: all 0.2s linear;
-  cursor: pointer;
-  border: none;
-  background: #fff;
-}
-
-.back > svg {
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: 20px;
-  transition: all 0.4s ease-in;
-}
-
-.back:hover > svg {
-  font-size: 1.2em;
-  transform: translateX(-5px);
-}
-
-.back:hover {
-  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
-  transform: translateY(-2px);
 }

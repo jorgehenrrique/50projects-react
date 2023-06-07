@@ -10,7 +10,7 @@ import ScrollAnimation from './pages/06scroll-animation/ScrollAnimation';
 import SplitLandingPage from './pages/07split-landing-page/SplitLandingPage';
 import FormInputWave from './pages/08form-input-wave/FormInputWave';
 import './styles/reset.css';
-import BackHome from './components/BackHome';
+import BackHome from './components/backhome/BackHome';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
