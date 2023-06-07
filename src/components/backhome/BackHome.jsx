@@ -5,7 +5,7 @@ import './BackHome.css';
 export default function BackHome() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const [button, setButton] = useState(null);
+  const [button, setButton] = useState(false);
 
   useEffect(() => {
     (pathname === '/50projects-react') ?
