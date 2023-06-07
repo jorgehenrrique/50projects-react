@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 32px);
+  /* height: calc(100vh - 32px); */
+  height: 100vh;
   overflow: hidden;
 }
 .progress-container {
