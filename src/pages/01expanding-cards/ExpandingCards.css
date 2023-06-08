@@ -18,7 +18,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: all 0.7s ease-in;
+  transition: all 0.7s ease-out;
 }
 .panel h3 {
   font-size: 2.4rem;

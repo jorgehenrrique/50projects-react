@@ -1,47 +1,62 @@
-import { useEffect } from 'react';
-import './ExpandingCards.css';
+import "./ExpandingCards.css";
+import { useState } from "react";
 
 export default function ExpandingCards() {
+  const [panels, setPanels] = useState([
+    {
+      active: true,
+      title: "Explore The World",
+      url:
+        "https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    },
+    {
+      active: false,
+      title: "Wild Forest",
+      url:
+        "https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    },
+    {
+      active: false,
+      title: "Sunny Beach",
+      url:
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
+    },
+    {
+      active: false,
+      title: "City on Winter",
+      url:
+        "https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+    },
+    {
+      active: false,
+      title: "Mountains - Clouds",
+      url:
+        "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    },
+  ]);
 
-  function toggleImage() {
-    const img = document.querySelectorAll('.panel');
-
-    img.forEach(element => {
-      element.onclick = () => {
-        img.forEach(item => item.classList.remove('active')); // Remover a classe 'active' de todos elementos
-        element.classList.add('active'); // Adicionar a classe 'active' apenas ao elemento clicado
-      };
-    })
+  function toggleImage(currentIndex) {
+    const newPanels = panels.map((panel, index) => {
+      panel.active = currentIndex === index;
+      return panel;
+    });
+    setPanels(newPanels);
   }
 
-  useEffect(() => {
-    toggleImage();
-  }, []);
-
   return (
-    <>
-      <div className="container-01">
-        <div className="panel active"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")' }}>
-          <h3>Explore The World</h3>
-        </div>
-        <div className="panel"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")' }}>
-          <h3>Wild Forest</h3>
-        </div>
-        <div className="panel"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80")' }}>
-          <h3>Sunny Beach</h3>
-        </div>
-        <div className="panel"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80")' }}>
-          <h3>City on Winter</h3>
-        </div >
-        <div className="panel"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")' }}>
-          <h3>Mountains - Clouds</ h3>
-        </div>
-      </div >
-    </>
+    <div className="container-01">
+      {panels.map((panel, index) => {
+        return (
+          <div
+            onClick={() => toggleImage(index)}
+            className={`panel ${panel.active ? "active" : ""}`}
+            style={{
+              backgroundImage: `url("${panel.url}")`
+            }} key={index}>
+            <h3>{panel.title}</h3>
+          </div>
+        )
+      })}
+    </div>
   );
 }
