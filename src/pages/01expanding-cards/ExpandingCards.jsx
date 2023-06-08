@@ -37,7 +37,7 @@ export default function ExpandingCards() {
 
   function toggleImage(currentIndex) {
     const newPanels = panels.map((panel, index) => {
-      panel.active = currentIndex === index;
+      panel.active = (currentIndex === index); // retorna, true se o currentIndex for igual ao index, e false caso contrário.
       return panel;
     });
     setPanels(newPanels);
@@ -47,12 +47,9 @@ export default function ExpandingCards() {
     <div className="container-01">
       {panels.map((panel, index) => {
         return (
-          <div
-            onClick={() => toggleImage(index)}
+          <div onClick={() => toggleImage(index)}
             className={`panel ${panel.active ? "active" : ""}`}
-            style={{
-              backgroundImage: `url("${panel.url}")`
-            }} key={index}>
+            style={{ backgroundImage: `url("${panel.url}")` }} key={index}>
             <h3>{panel.title}</h3>
           </div>
         )
