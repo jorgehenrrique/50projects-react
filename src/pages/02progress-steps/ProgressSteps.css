@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: calc(100vh - 32px); */
   height: 100vh;
   overflow: hidden;
 }
@@ -14,7 +13,7 @@
   margin-bottom: 3rem;
   max-width: 100%;
   width: 350px;
-  /* width: 80%; */
+  width: 80%;
 }
 .progress-container::before {
   content: "";
@@ -80,6 +79,5 @@
 @media (max-width: 480px) {
   .progress-container {
     width: 100%;
-    /* padding: 0 1rem; */
   }
 }

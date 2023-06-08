@@ -20,7 +20,7 @@ export default function ProgressSteps() {
   const prev = () => {
     if (stap >= 0 && stap <= 3) {
       setStap(--stap);
-      console.log('indice', stap);
+      console.log('indice--', stap);
 
       // ALTERNATIVA
       // setActive(active => {
@@ -48,7 +48,7 @@ export default function ProgressSteps() {
   const next = () => {
     if (stap >= 0 && stap <= 3) {
       setStap(++stap);
-      console.log('indice', stap);
+      console.log('indice++', stap);
 
       // ALTERNATIVA
       // setActive(active => {
@@ -72,12 +72,16 @@ export default function ProgressSteps() {
     }
   };
 
+  function width() {
+    // Lógica para calcular a largura de progresso
+    const progressWidth = `${stap * 33.33}%`;
+    return progressWidth;
+  }
 
-  console.log('indice g: ', stap);
   return (
     <div className="container-02">
       <div className="progress-container">
-        <div className="progress" id="progress"></div>
+        <div className="progress" id="progress" style={{ width: width() }}></div>
         {active.map((active, index) => {
           return (
             <div className={`circle ${active.active ? "active" : ""}`}
