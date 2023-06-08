@@ -81,7 +81,7 @@ export default function ProgressSteps() {
   return (
     <div className="container-02">
       <div className="progress-container">
-        <div className="progress" id="progress" style={{ width: width() }}></div>
+        <div className="progress" style={{ width: width() }}></div>
         {active.map((active, index) => {
           return (
             <div className={`circle ${active.active ? "active" : ""}`}
@@ -91,10 +91,10 @@ export default function ProgressSteps() {
       </div>
 
       <div>
-        <button className="btn" id="prev"
-          onClick={prev} disabled={stap <= 0} >Prev</button>
-        <button className="btn" id="next"
-          onClick={next} disabled={stap >= 3}>Next</button>
+        <button className="btn" onClick={prev}
+          disabled={stap <= 0} >Prev</button>
+        <button className="btn" onClick={next}
+          disabled={stap >= 3}>Next</button>
       </div>
     </div>
   );
