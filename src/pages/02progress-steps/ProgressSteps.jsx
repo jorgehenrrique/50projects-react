@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './ProgressSteps.css';
 
 export default function ProgressSteps() {
-  let [stap, setStap] = useState(0);
+  let [step, setStep] = useState(0);
   const [active, setActive] = useState([{
     active: true,
   },
@@ -18,14 +18,19 @@ export default function ProgressSteps() {
   ]);
 
   const prev = () => {
-    if (stap >= 0 && stap <= 3) {
-      setStap(--stap);
-      console.log('indice--', stap);
+    if (step >= 0 && step <= 3) {
+      setStep(--step);
+
+      setActive(prevActive => {
+        const newActive = [...prevActive];
+        newActive[step + 1].active = false;
+        return newActive;
+      });
 
       // ALTERNATIVA
       // setActive(active => {
       //   return active.map((item, index) => {
-      //     if (index === stap + 1) {
+      //     if (index === step + 1) {
       //       return {
       //         ...item,
       //         active: false
@@ -35,25 +40,24 @@ export default function ProgressSteps() {
       //     }
       //   });
       // });
-
-      setActive(prevActive => {
-        const newActive = [...prevActive];
-        newActive[stap + 1].active = false;
-        return newActive;
-      });
     }
   };
 
 
   const next = () => {
-    if (stap >= 0 && stap <= 3) {
-      setStap(++stap);
-      console.log('indice++', stap);
+    if (step >= 0 && step <= 3) {
+      setStep(++step);
+
+      setActive(prevActive => {
+        const newActive = [...prevActive];
+        newActive[step].active = true;
+        return newActive;
+      });
 
       // ALTERNATIVA
       // setActive(active => {
       //   return active.map((item, index) => {
-      //     if (index === stap) {
+      //     if (index === step) {
       //       return {
       //         ...item,
       //         active: true
@@ -63,18 +67,12 @@ export default function ProgressSteps() {
       //     }
       //   });
       // });
-
-      setActive(prevActive => {
-        const newActive = [...prevActive];
-        newActive[stap].active = true;
-        return newActive;
-      });
     }
   };
 
-  function width() {
-    // Lógica para calcular a largura de progresso
-    const progressWidth = `${stap * 33.33}%`;
+  // Calcular a largura de progresso
+  const width = () => {
+    const progressWidth = `${step / (active.length - 1) * 100}%`;
     return progressWidth;
   }
 
@@ -85,16 +83,15 @@ export default function ProgressSteps() {
         {active.map((active, index) => {
           return (
             <div className={`circle ${active.active ? "active" : ""}`}
-              key={index}>{index + 1}</div>
-          )
+              key={index}>{index + 1}</div>)
         })}
       </div>
 
       <div>
         <button className="btn" onClick={prev}
-          disabled={stap <= 0} >Prev</button>
+          disabled={step <= 0} >Prev</button>
         <button className="btn" onClick={next}
-          disabled={stap >= 3}>Next</button>
+          disabled={step >= 3}>Next</button>
       </div>
     </div>
   );
