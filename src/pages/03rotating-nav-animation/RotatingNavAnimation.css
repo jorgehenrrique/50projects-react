@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-
+.body03 {
+  background-color: #333;
+  overflow: hidden;
+}
 .container-03 {
   font-family: "Lato", sans-serif;
   background-color: #fafafa;
-  transform-origin: top left;
+  transform-origin: top right;
   transition: transform 0.5s linear;
-  /* min-height: 100vh; */
-  /* width: 100vw; */
   padding: 5rem;
 }
 .container-03.show-nav {
@@ -15,9 +16,7 @@
 .circle03-container {
   position: fixed;
   top: -10rem;
-  /* right: -10rem; */
-  left: -10rem;
-  /* border-radius: 50%; */
+  right: -10rem;
 }
 .circle03 {
   background-color: #ff7979;
@@ -28,14 +27,13 @@
   transition: transform 0.5s linear;
 }
 .container-03.show-nav .circle03 {
-  transform: rotate(-70deg);
+  transform: rotate(-205deg);
 }
 .circle03 button {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  /* right: 50%; */
-  left: 50%;
+  left: 60%;
   height: 10rem;
   background-color: transparent;
   border: 0;
@@ -46,12 +44,11 @@
   outline: none;
 }
 .circle03 button#open {
-  left: 60%;
-  /* right: 60%; */
+  left: 20%;
 }
 .circle03 button#close {
-  top: 60%;
-  transform: rotate(90deg);
+  top: 55%;
+  transform: rotate(-90deg);
   transform-origin: top left;
 }
 .container-03.show-nav + nav li {
@@ -62,7 +59,6 @@
   position: fixed;
   bottom: 4rem;
   left: 0;
-  /* right: 0; */
   z-index: 10;
 }
 .nav03 ul {
@@ -75,10 +71,12 @@
   margin: 4rem 0;
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;
+  font-weight: bold;
 }
 .nav03 ul li i {
   font-size: 2rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .nav03 ul li + li {
   margin-left: 1.5rem;
@@ -92,6 +90,7 @@
   color: #fafafa;
   text-decoration: none;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .nav03 a:hover {
   color: #ff7979;
@@ -119,4 +118,48 @@
   color: #333;
   line-height: 1.5;
   margin: 2.5rem 0;
+}
+
+/* || Icone hamburguer menu */
+.menu-icon03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.bar03 {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  border-radius: 0.8rem;
+}
+
+/* || Icone X */
+.close-icon03 {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.line03 {
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #fff;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  border-radius: 0.8rem;
+}
+.line103 {
+  transform: rotate(05deg);
+}
+.line203 {
+  transform: rotate(-85deg);
 }
