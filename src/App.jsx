@@ -3,6 +3,7 @@ import './styles/App.css';
 import { NavLink } from 'react-router-dom';
 
 function App() {
+  document.title = '50projects react';
 
   return (
     <div className="container">

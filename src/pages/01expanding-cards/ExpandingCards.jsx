@@ -2,6 +2,8 @@ import "./ExpandingCards.css";
 import { useState } from "react";
 
 export default function ExpandingCards() {
+  document.title = 'Expanding Cards';
+
   const [panels, setPanels] = useState([
     {
       active: true,

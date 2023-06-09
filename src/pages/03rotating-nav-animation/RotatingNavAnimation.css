@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+.container-03 {
+  font-family: "Lato", sans-serif;
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  /* min-height: 100vh; */
+  /* width: 100vw; */
+  padding: 5rem;
+}
+.container-03.show-nav {
+  transform: rotate(-20deg);
+}
+.circle03-container {
+  position: fixed;
+  top: -10rem;
+  /* right: -10rem; */
+  left: -10rem;
+  /* border-radius: 50%; */
+}
+.circle03 {
+  background-color: #ff7979;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+.container-03.show-nav .circle03 {
+  transform: rotate(-70deg);
+}
+.circle03 button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  /* right: 50%; */
+  left: 50%;
+  height: 10rem;
+  background-color: transparent;
+  border: 0;
+  font-size: 2.6rem;
+  color: #fff;
+}
+.circle03 button:focus {
+  outline: none;
+}
+.circle03 button#open {
+  left: 60%;
+  /* right: 60%; */
+}
+.circle03 button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.container-03.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+.nav03 {
+  position: fixed;
+  bottom: 4rem;
+  left: 0;
+  /* right: 0; */
+  z-index: 10;
+}
+.nav03 ul {
+  list-style-type: none;
+  padding-left: 3rem;
+}
+.nav03 ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 4rem 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+.nav03 ul li i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.nav03 ul li + li {
+  margin-left: 1.5rem;
+  transform: translateX(-150%);
+}
+.nav03 ul li + li + li {
+  margin-left: 3rem;
+  transform: translateX(-200%);
+}
+.nav03 a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.nav03 a:hover {
+  color: #ff7979;
+  font-weight: bold;
+}
+.content img {
+  max-width: 100%;
+}
+.content {
+  max-width: 100rem;
+  margin: 5rem auto;
+  text-align: justify;
+}
+.content h1 {
+  margin: 1rem 0;
+}
+.content h3 {
+  margin: 2rem 0;
+}
+.content small {
+  color: #555;
+  font-style: italic;
+}
+.content p {
+  color: #333;
+  line-height: 1.5;
+  margin: 2.5rem 0;
+}
