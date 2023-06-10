@@ -1,12 +1,20 @@
 import './styles/reset.css';
 import './styles/App.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function App() {
-  document.title = '50projects react';
+  document.title = '50projects React';
+  const { pathname } = useLocation();
+  const [opacity, setOpacity] = useState(null);
+
+  useEffect(() => {
+    (pathname === '/50projects-react/' || pathname === '/50projects-react') ?
+      setOpacity(true) : setOpacity(false);
+  }, [pathname]);
 
   return (
-    <div className="container">
+    <div className={`container ${opacity ? "opacity" : ""}`}>
       <NavLink className='item' to='./pages/01expanding-cards/'>Expanding Cards</NavLink>
       <NavLink className='item' to='./pages/02progress-steps/'>Progress Steps</NavLink>
       <NavLink className='item' to='./pages/03rotating-nav-animation/'>Rotating Nav Animation</NavLink>
