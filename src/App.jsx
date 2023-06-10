@@ -11,6 +11,8 @@ function App() {
   useEffect(() => {
     (pathname === '/50projects-react/' || pathname === '/50projects-react') ?
       setOpacity(true) : setOpacity(false);
+
+    return () => setOpacity(null);
   }, [pathname]);
 
   return (
