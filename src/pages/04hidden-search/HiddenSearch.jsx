@@ -6,13 +6,13 @@ export default function HiddenSearch() {
   document.title = 'Hidden Search';
 
   const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(!open);
 
   useEffect(() => {
     if (open) {
       document.querySelector('.imput-search04').focus();
     }
   }, [open]);
-  const handleOpen = () => setOpen(!open);
 
   return (
     <div className='container-04'>
