@@ -16,8 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <BackHome />
     <Routes>
-      <Route path='*' element={<App />} />
-      <Route path='/50projects-react' element={<App />} />
+      <Route index path='/50projects-react' element={<App />} />
       <Route path='/50projects-react/pages/01expanding-cards' element={<ExpandingCards />} />
       <Route path='/50projects-react/pages/02progress-steps' element={<ProgressSteps />} />
       <Route path='/50projects-react/pages/03rotating-nav-animation' element={<RotatingNavAnimation />} />
@@ -26,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/pages/06scroll-animation' element={<ScrollAnimation />} />
       <Route path='/50projects-react/pages/07split-landing-page' element={<SplitLandingPage />} />
       <Route path='/50projects-react/pages/08form-input-wave' element={<FormInputWave />} />
+      <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>
 )
