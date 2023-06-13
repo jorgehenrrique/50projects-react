@@ -1,3 +1,6 @@
+.body-05 {
+  overflow: hidden;
+}
 .container-05 {
   display: flex;
   align-items: center;
