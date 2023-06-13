@@ -6,6 +6,7 @@
   left: 0;
   background-color: #fff;
   margin: 1rem;
+  z-index: 1000;
 }
 .back {
   display: flex;
