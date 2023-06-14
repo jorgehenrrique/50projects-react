@@ -11,7 +11,7 @@
   font-size: 3rem;
   margin-top: 2rem;
 }
-.box {
+.box-06 {
   width: 40rem;
   height: 20rem;
   display: flex;
@@ -20,14 +20,14 @@
   color: #333;
   font-size: 3rem;
   border-radius: var(--border-radius);
-  background: linear-gradient(to right, #abef8c, #f6ad71);
+  background: linear-gradient(to right, #a695c7, #7d6aa9);
   box-shadow: 0 6px 10px #333;
   transform: translateX(400%);
   transition: transform 0.4s ease;
 }
-.box:nth-of-type(even) {
+.box-06:nth-of-type(even) {
   transform: translateX(-400%);
 }
-.box.show {
+.box-06.show-06 {
   transform: translateX(0);
 }
