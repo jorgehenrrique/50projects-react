@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './ProgressSteps.css';
 
 export default function ProgressSteps() {
-  document.title = 'Progress Steps';
+  useEffect(() => {
+    document.title = 'Progress Steps';
+  }, []);
 
   let [step, setStep] = useState(0);
   const [active, setActive] = useState([{
