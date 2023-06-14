@@ -1,0 +1,32 @@
+.container-06 {
+  background: linear-gradient(to bottom, #ffffff, #d4d4d4);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+.container-06 h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.box {
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 3rem;
+  border-radius: var(--border-radius);
+  background: linear-gradient(to right, #ffc0cb, #87ceeb);
+  box-shadow: 0 6px 10px #333;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
