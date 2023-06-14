@@ -1,10 +1,11 @@
 .container-06 {
-  background: linear-gradient(to bottom, #ffffff, #d4d4d4);
+  background-color: #cdcdcd76;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 2rem;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 .container-06 h1 {
   font-size: 3rem;
@@ -19,7 +20,7 @@
   color: #333;
   font-size: 3rem;
   border-radius: var(--border-radius);
-  background: linear-gradient(to right, #ffc0cb, #87ceeb);
+  background: linear-gradient(to right, #abef8c, #f6ad71);
   box-shadow: 0 6px 10px #333;
   transform: translateX(400%);
   transition: transform 0.4s ease;

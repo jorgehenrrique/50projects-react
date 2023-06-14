@@ -5,9 +5,9 @@ export default function ScrollAnimation() {
   document.title = 'Scroll Animation';
 
   useEffect(() => {
-    const checkBoxes = () => {
+    const handleScroll = () => {
       const triggerBottom = window.innerHeight / 5 * 4;
-      const boxes = document.querySelectorAll('.box');
+      const boxes = Array.from(document.querySelectorAll('.box'));
 
       boxes.forEach((box) => {
         const boxTop = box.getBoundingClientRect().top;
@@ -20,17 +20,16 @@ export default function ScrollAnimation() {
       });
     };
 
-    window.addEventListener('scroll', checkBoxes);
-    checkBoxes();
-
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => {
-      window.removeEventListener('scroll', checkBoxes);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
     <div className="container-06">
-      <h1>Scroll to see the animation</h1>
+      <h1>Role para ver a animação</h1>
       <div className="box"><h2>Content</h2></div>
       <div className="box"><h2>Content</h2></div>
       <div className="box"><h2>Content</h2></div>
