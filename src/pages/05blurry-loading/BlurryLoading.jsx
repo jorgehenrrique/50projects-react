@@ -3,7 +3,9 @@ import './BlurryLoading.css';
 
 
 export default function BlurryLoading() {
-  document.title = 'Blurry Loading';
+  useEffect(() => {
+    document.title = 'Blurry Loading';
+  }, []);
 
   const [blur, setBlur] = useState(20);
   const [count, setCount] = useState(0);
