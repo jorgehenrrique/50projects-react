@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './RotatingNavAnimation.css';
 
 export default function RotatingNavAnimation() {
-  document.title = 'Rotating Navigation';
+  useEffect(() => {
+    document.title = 'Rotating Navigation';
+  }, []);
   const url = 'https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80';
   const [showNav, setShowNav] = useState(null);
 
