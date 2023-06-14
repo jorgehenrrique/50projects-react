@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './BlurryLoading.css';
 
-
 export default function BlurryLoading() {
   useEffect(() => {
     document.title = 'Blurry Loading';

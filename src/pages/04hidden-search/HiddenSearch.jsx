@@ -3,7 +3,9 @@ import './HiddenSearch.css';
 import lupa from './img/lupa.png';
 
 export default function HiddenSearch() {
-  document.title = 'Hidden Search';
+  useEffect(() => {
+    document.title = 'Hidden Search';
+  }, []);
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
