@@ -22,7 +22,7 @@ export default function BlurryLoading() {
   }, [count, blur, opacity, scale]);
 
   return (
-    <div className='body-05' style={{ overflow: count < 100 ? 'hidden' : 'auto' }}>
+    <div style={{ overflow: count < 100 ? 'hidden' : 'auto' }}>
       <div className="container-05" style={{ filter: `blur(${blur}px)`, transform: `scale(${scale})` }}></div>
       <span className='loading-text05' style={{ filter: `opacity(${opacity})` }}>{count}%</span>
     </div>
