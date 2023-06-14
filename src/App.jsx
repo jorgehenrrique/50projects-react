@@ -4,7 +4,9 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 function App() {
-  document.title = '50projects React';
+  useEffect(() => {
+    document.title = '50projects React';
+  }, []);
   const { pathname } = useLocation();
   const [opacity, setOpacity] = useState(null);
 
