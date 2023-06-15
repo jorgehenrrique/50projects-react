@@ -26,7 +26,8 @@ export default function SplitLandingPage() {
   };
 
   return (
-    <div className={`container-07 ${isLeftHovered ? 'hover-left07' : ''} ${isRightHovered ? 'hover-right07' : ''}`}>
+    <div className={`container-07 ${isLeftHovered ? 'hover-left07' : ''} 
+                                  ${isRightHovered ? 'hover-right07' : ''}`}>
       <section className='split07 left07'
         onMouseEnter={handleLeftMouseEnter}
         onMouseLeave={handleLeftMouseLeave}>
@@ -43,4 +44,3 @@ export default function SplitLandingPage() {
     </div>
   );
 }
-// className={`panel ${panel.active ? "active" : ""}`}
