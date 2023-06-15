@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import './SplitLandingPage.css';
 
 export default function SplitLandingPage() {
   useEffect(() => {
