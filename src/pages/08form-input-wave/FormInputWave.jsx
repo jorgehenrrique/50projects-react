@@ -7,6 +7,7 @@ export default function FormInputWave() {
   }, []);
 
   const labelsRef = useRef([]);
+
   useEffect(() => {
     labelsRef.current.forEach((label) => {
       const letters = label.textContent.split('');
@@ -22,7 +23,6 @@ export default function FormInputWave() {
       updatedContent.forEach((letter) => label.appendChild(letter));
     });
   }, []);
-
 
   return (
     <div className="container-08">
