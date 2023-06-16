@@ -35,7 +35,7 @@
   padding: 1.5rem;
   /* font-family: inherit; */
   font-size: 1.6rem;
-  /* font-weight: bold; */
+  font-weight: bold;
   /* border: 0; */
   border-radius: var(--border-radius);
 }
