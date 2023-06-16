@@ -9,35 +9,19 @@ export default function SplitLandingPage() {
   const [isLeftHovered, setIsLeftHovered] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);
 
-  const handleLeftMouseEnter = () => {
-    setIsLeftHovered(true);
-  };
-
-  const handleLeftMouseLeave = () => {
-    setIsLeftHovered(false);
-  };
-
-  const handleRightMouseEnter = () => {
-    setIsRightHovered(true);
-  };
-
-  const handleRightMouseLeave = () => {
-    setIsRightHovered(false);
-  };
-
   return (
     <div className={`container-07 ${isLeftHovered ? 'hover-left07' : ''} 
                                   ${isRightHovered ? 'hover-right07' : ''}`}>
       <section className='split07 left07'
-        onMouseEnter={handleLeftMouseEnter}
-        onMouseLeave={handleLeftMouseLeave}>
+        onMouseEnter={() => setIsLeftHovered(true)}
+        onMouseLeave={() => setIsLeftHovered(false)}>
         <h1>Playstation</h1>
         <button className='btn07'>Buy Now</button>
       </section>
 
       <section className='split07 right07'
-        onMouseEnter={handleRightMouseEnter}
-        onMouseLeave={handleRightMouseLeave}>
+        onMouseEnter={() => setIsRightHovered(true)}
+        onMouseLeave={() => setIsRightHovered(false)}>
         <h1>XBox Series</h1>
         <button className='btn07'>Buy Now</button>
       </section>
