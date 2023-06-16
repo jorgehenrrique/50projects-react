@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+.container-08 {
+  font-family: "Muli", sans-serif;
+  background-color: #1868b3d0;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.form08 {
+  background-color: #1117428b;
+  /* background-color: #00000066; */
+  /* width: 44rem; */
+  /* height: fit-content; */
+  padding: 2rem 4rem;
+  border-radius: var(--border-radius);
+}
+.form08 h1 {
+  /* text-align: center; */
+  margin-bottom: 3rem;
+}
+.form08 a {
+  color: #46a6ff;
+}
+
+.btn08 {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: #46a6ff;
+  padding: 1.5rem;
+  /* font-family: inherit; */
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  /* border: 0; */
+  border-radius: var(--border-radius);
+}
+/* .btn08:focus {
+  outline: 0;
+} */
+.btn08:active {
+  transform: scale(0.98);
+}
+.text08 {
+  margin-top: 3rem;
+}
+
+/* div dos dois formularios */
+.form-control08 {
+  position: relative;
+  margin: 2rem 0 4rem;
+  width: 30rem;
+}
+.form-control08 input {
+  background-color: transparent;
+  /* border: 0; */
+  border-bottom: 0.2rem solid #fff;
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.form-control08 input:focus,
+.form-control08 input:valid {
+  /* outline: 0; */
+  border-bottom-color: #46a6ff;
+}
+.form-control08 label {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  pointer-events: none;
+}
+.form-control08 label span {
+  display: inline-block;
+  font-size: 1.8rem;
+  min-width: 0.5rem;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control08 input:focus + label span,
+.form-control08 input:valid + label span {
+  color: #46a6ff;
+  transform: translateY(-30px);
+}
