@@ -27,6 +27,7 @@ function App() {
       <NavLink className='item' to='./pages/06scroll-animation/'>Scroll Animation</NavLink>
       <NavLink className='item' to='./pages/07split-landing-page/'>Split Landing Page</NavLink>
       <NavLink className='item' to='./pages/08form-input-wave/'>Form Input Wave</NavLink>
+      <NavLink className='item' to='./pages/09sound-board'>Sound Board</NavLink>
     </div>
   )
 }

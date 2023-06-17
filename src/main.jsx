@@ -1,6 +1,7 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './styles/reset.css';
 import ExpandingCards from './pages/01expanding-cards/ExpandingCards';
 import ProgressSteps from './pages/02progress-steps/ProgressSteps';
 import RotatingNavAnimation from './pages/03rotating-nav-animation/RotatingNavAnimation';
@@ -9,8 +10,8 @@ import BlurryLoading from './pages/05blurry-loading/BlurryLoading';
 import ScrollAnimation from './pages/06scroll-animation/ScrollAnimation';
 import SplitLandingPage from './pages/07split-landing-page/SplitLandingPage';
 import FormInputWave from './pages/08form-input-wave/FormInputWave';
-import './styles/reset.css';
 import BackHome from './components/backhome/BackHome';
+import SoundBoard from './pages/09sound-board/SoundBoard.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/pages/06scroll-animation' element={<ScrollAnimation />} />
       <Route path='/50projects-react/pages/07split-landing-page' element={<SplitLandingPage />} />
       <Route path='/50projects-react/pages/08form-input-wave' element={<FormInputWave />} />
+      <Route path='/50projects-react/pages/09sound-board' element={<SoundBoard />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>
