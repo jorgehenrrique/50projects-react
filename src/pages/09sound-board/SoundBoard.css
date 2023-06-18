@@ -1,0 +1,20 @@
+.container-09 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  background: linear-gradient(135deg, #8a2387, #e94057, #f27121);
+}
+.container-09 button {
+  background-color: #3333336d;
+  padding: 2rem 3rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease-out;
+}
+.container-09 button:hover {
+  background-color: #3333334a;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
