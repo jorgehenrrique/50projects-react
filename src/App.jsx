@@ -29,6 +29,8 @@ function App() {
       <NavLink className='item' to='./pages/08form-input-wave/'>Form Input Wave</NavLink>
       <NavLink className='item' to='./pages/09sound-board'>Sound Board</NavLink>
       <NavLink className='item' to='./pages/10-dad-jokes'>Dad jokes</NavLink>
+
+      <NavLink className='item' to='./pages/11-event-keycodes'>Event keycodes</NavLink>
     </div>
   )
 }
