@@ -10,14 +10,12 @@ export default function Dadjokes() {
 
   function generateJoke() {
     fetch('https://icanhazdadjoke.com', {
-      headers: {
-        Accept: 'application/json',
-      },
+      headers: { Accept: 'application/json', },
     }).then((response) => {
       if (response.ok && response.status === 200) { return response.json(); }
       else { throw new Error('Servidor indisponível'); }
-    }).then((response) => {
-      setJoke(response.joke);
+    }).then((data) => {
+      setJoke(data.joke);
     }).catch((error) => {
       setJoke(error.message);
     });
@@ -35,9 +33,9 @@ export default function Dadjokes() {
   return (
     <div className="body-10">
       <div className="container-10">
-        <h1>Desafio não ria</h1>
+        <h1>Desafio Não Ria</h1>
         <strong>{joke}</strong>
-        <button onClick={generateJoke}>Gerar outra piada</button>
+        <button onClick={generateJoke}>Gerar Outra Piada</button>
       </div>
     </div >
   );
