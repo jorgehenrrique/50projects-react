@@ -13,6 +13,7 @@
   font-weight: bold;
   padding: 2rem 1.5rem;
   border: 1px solid #fff;
+  background-color: #62616186;
   display: flex;
   gap: 3rem;
 }
@@ -27,4 +28,8 @@
   padding: 2rem 3rem;
   background-color: #62616186;
   font-size: 1.4rem;
+}
+.no-border {
+  border: none;
+  background-color: transparent;
 }

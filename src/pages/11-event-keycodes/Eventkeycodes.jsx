@@ -23,7 +23,7 @@ export default function Eventkeycodes() {
 
   return (
     <div className="body-11" onKeyPress={(e) => handleKey(e)} tabIndex={0}>
-      <div className="container-11">
+      <div className={`container-11 ${press ? 'no-border' : ''}`}>
         {!press && <p>Press any key to get the keyCode</p>}
         {press &&
           <>
@@ -33,7 +33,7 @@ export default function Eventkeycodes() {
             </div>
             <div>
               event.which
-              <small>{`${key.which}`}</small>
+              <small>{`${event.keyCode || event.which}`}</small>
               {/* O código .keyCode foi descontinuado e não é mais recomendado para obter o código da tecla pressionada.
               Em vez disso, você pode usar a propriedade event.which para obter o código da tecla pressionada. */}
             </div>
