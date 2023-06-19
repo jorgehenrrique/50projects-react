@@ -12,6 +12,9 @@ export default function SoundBoard() {
     document.title = 'Sound Board';
   }, []);
 
+  const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong'];
+  const soundPaths = { applause, boo, gasp, tada, victory, wrong };
+
   const playAudio = (audioId) => {
     const audioElement = document.getElementById(audioId);
     audioElement.pause();
@@ -21,20 +24,11 @@ export default function SoundBoard() {
 
   return (
     <div className="container-09">
-      <audio id='applause' src={applause}></audio>
-      <audio id='boo' src={boo}></audio>
-      <audio id='gasp' src={gasp}></audio>
-      <audio id='tada' src={tada}></audio>
-      <audio id='victory' src={victory}></audio>
-      <audio id='wrong' src={wrong}></audio>
+      {sounds.map((sound, index) => (
+        <audio key={index} id={sound} src={soundPaths[sound]}></audio>))}
 
-      <button onClick={() => playAudio('applause')}>Applause</button>
-      <button onClick={() => playAudio('boo')}>Boo</button>
-      <button onClick={() => playAudio('gasp')}>Gasp</button>
-      <button onClick={() => playAudio('tada')}>Tada</button>
-      <button onClick={() => playAudio('victory')}>Victory</button>
-      <button onClick={() => playAudio('wrong')}>Wrong</button>
-    </div>
+      {sounds.map((sound, idx) => (
+        <button key={idx} onClick={() => playAudio(sound)}>{sound}</button>))}
+    </div >
   );
 }
-
