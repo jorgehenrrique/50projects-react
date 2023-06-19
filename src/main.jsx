@@ -12,6 +12,7 @@ import SplitLandingPage from './pages/07split-landing-page/SplitLandingPage';
 import FormInputWave from './pages/08form-input-wave/FormInputWave';
 import BackHome from './components/backhome/BackHome';
 import SoundBoard from './pages/09sound-board/SoundBoard.jsx';
+import Dadjokes from './pages/10-dad-jokes/Dadjokes.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/pages/07split-landing-page' element={<SplitLandingPage />} />
       <Route path='/50projects-react/pages/08form-input-wave' element={<FormInputWave />} />
       <Route path='/50projects-react/pages/09sound-board' element={<SoundBoard />} />
+      <Route path='/50projects-react/pages/10-dad-jokes' element={<Dadjokes />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>
