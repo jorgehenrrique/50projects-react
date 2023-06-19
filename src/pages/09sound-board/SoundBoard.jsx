@@ -24,8 +24,8 @@ export default function SoundBoard() {
 
   return (
     <div className="container-09">
-      {sounds.map((sound, index) => (
-        <audio key={index} id={sound} src={soundPaths[sound]}></audio>))}
+      {sounds.map((sound, idx) => (
+        <audio key={idx} id={sound} src={soundPaths[sound]}></audio>))}
 
       {sounds.map((sound, idx) => (
         <button key={idx} onClick={() => playAudio(sound)}>{sound}</button>))}
