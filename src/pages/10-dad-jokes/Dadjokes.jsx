@@ -14,11 +14,8 @@ export default function Dadjokes() {
         Accept: 'application/json',
       },
     }).then((response) => {
-      if (response.ok && response.status === 200) {
-        return response.json();
-      } else {
-        throw new Error('Servidor indisponível');
-      }
+      if (response.ok && response.status === 200) { return response.json(); }
+      else { throw new Error('Servidor indisponível'); }
     }).then((response) => {
       setJoke(response.joke);
     }).catch((error) => {
