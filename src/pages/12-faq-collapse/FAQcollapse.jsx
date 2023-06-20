@@ -8,7 +8,7 @@ function Questions({ question, response }) {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    return () => { setActive(false); };
+    return () => setActive(false);
   }, []);
 
   return (
