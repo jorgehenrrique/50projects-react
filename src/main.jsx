@@ -14,6 +14,7 @@ import BackHome from './components/backhome/BackHome';
 import SoundBoard from './pages/09sound-board/SoundBoard.jsx';
 import Dadjokes from './pages/10-dad-jokes/Dadjokes.jsx';
 import Eventkeycodes from './pages/11-event-keycodes/Eventkeycodes.jsx';
+import FAQcollapse from './pages/12-faq-collapse/FAQcollapse.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/pages/10-dad-jokes' element={<Dadjokes />} />
 
       <Route path='/50projects-react/pages/11-event-keycodes' element={<Eventkeycodes />} />
+      <Route path='/50projects-react/pages/12-faq-collapse' element={<FAQcollapse />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>

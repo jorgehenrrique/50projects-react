@@ -31,6 +31,7 @@ function App() {
       <NavLink className='item' to='./pages/10-dad-jokes'>Dad jokes</NavLink>
 
       <NavLink className='item' to='./pages/11-event-keycodes'>Event keycodes</NavLink>
+      <NavLink className='item' to='./pages/12-faq-collapse'>FAQ collapse</NavLink>
     </div>
   )
 }
