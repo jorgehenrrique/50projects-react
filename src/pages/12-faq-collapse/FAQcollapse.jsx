@@ -4,7 +4,7 @@ import './FAQcollapse.css';
 import abaixo from './icon/abaixo.png';
 import acima from './icon/acima.png';
 
-function Questions(props) {
+function Questions({ question, response }) {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -14,8 +14,8 @@ function Questions(props) {
   return (
     <>
       <div className={`faq-12 ${active ? 'active-12' : ''}`}>
-        <h3>{props.question}</h3>
-        <p>{props.response}</p>
+        <h3>{question}</h3>
+        <p>{response}</p>
 
         <button>
           {!active && <img src={abaixo} onClick={() => setActive(!active)} />}
