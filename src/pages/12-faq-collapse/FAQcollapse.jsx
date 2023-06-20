@@ -8,7 +8,9 @@ export default function FAQcollapse() {
 
   return (
     <div className="body-12">
-      <h1>FAQ collapse</h1>
-    </div >
+      <div className="container-12">
+        <h1>Frequently Asked Questions</h1>
+      </div >
+    </div>
   );
 }

@@ -34,6 +34,7 @@
   background-color: #ff4500;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 .container-10 button:active {
   transform: scale(0.96);
