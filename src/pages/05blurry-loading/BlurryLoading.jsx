@@ -45,7 +45,7 @@ export default function BlurryLoading() {
     //   <span className='loading-text05' style={{ filter: `opacity(${opacity})` }}>{count}%</span>
     // </div>
 
-    <div style={{ overflow: 'hidden' }}>
+    <div>
       <div className="container-05" style={{ filter: `blur(${state.blur}px)` }} />
       <span className='loading-text05' style={{ filter: `opacity(${state.opacity})` }}>
         {state.count}%
