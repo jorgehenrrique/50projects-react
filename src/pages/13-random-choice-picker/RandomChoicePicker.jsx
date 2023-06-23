@@ -8,7 +8,17 @@ export default function RandomChoicePicker() {
 
   const [tags, setTag] = useState([]);
   const [rand, setRand] = useState(null);
+  const [count, setCount] = useState(0);
   const onEnter = useRef();
+
+  useEffect(() => {
+    if (tags.length >= 2 && count <= 30) {
+      setTimeout(() => {
+        setRand(Math.floor(Math.random() * tags.length));
+        setCount(count + 1);
+      }, 150);
+    }
+  }, [count, tags]);
 
   function createTags(e) {
     setTag(e.trim().split(',').filter(t => t.trim() !== ''));
@@ -16,12 +26,17 @@ export default function RandomChoicePicker() {
 
   function randomSelect(e) {
     if (e.key === 'Enter') {
+      if (onEnter.current.value.trim() === '') {
+        return;
+      }
       onEnter.current.value = '';
-      setRand(Math.floor(Math.random() * tags.length));
+      setCount(1);
       console.log(rand);
+      console.log(count);
     }
   }
-
+  console.log(rand);
+  console.log(count);
   return (
     <div className="body-13">
       <div className="container-13">
@@ -33,7 +48,7 @@ export default function RandomChoicePicker() {
           onKeyUp={(e) => randomSelect(e)}
           ref={onEnter}></textarea>
 
-        <div id="tags">
+        <div className="tags">
           {tags.map((tag, idx) => {
             return (
               <span key={idx} className={`tag ${rand === idx ? 'highlight' : ''}`}>{tag}</span>
