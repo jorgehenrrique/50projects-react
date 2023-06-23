@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from 'react';
 import './RandomChoicePicker.css';
 
@@ -12,15 +13,16 @@ export default function RandomChoicePicker() {
   const onEnter = useRef();
 
   useEffect(() => {
-    if (tags.length >= 2 && count <= 30) {
+    if (tags.length >= 1 && count < 30) {
       setTimeout(() => {
         setRand(Math.floor(Math.random() * tags.length));
         setCount(count + 1);
       }, 150);
     }
-  }, [count, tags]);
+  }, [count]);
 
   function createTags(e) {
+    setRand(null);
     setTag(e.trim().split(',').filter(t => t.trim() !== ''));
   }
 
@@ -31,12 +33,9 @@ export default function RandomChoicePicker() {
       }
       onEnter.current.value = '';
       setCount(1);
-      console.log(rand);
-      console.log(count);
     }
   }
-  console.log(rand);
-  console.log(count);
+
   return (
     <div className="body-13">
       <div className="container-13">
@@ -55,7 +54,8 @@ export default function RandomChoicePicker() {
             )
           })}
         </div>
-      </div >
+        <h3>Pressione enter duas vezes para reiniciar</h3>
+      </div>
     </div>
   );
 }
