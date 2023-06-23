@@ -8,7 +8,7 @@ export default function AnimatedNavigation() {
 
   return (
     <div className="body-14">
-
+      <h1>14-animated-navigation</h1>
     </div>
   );
 }

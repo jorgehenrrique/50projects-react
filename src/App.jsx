@@ -33,6 +33,7 @@ function App() {
       <NavLink className='item' to='./pages/11-event-keycodes'>Event keycodes</NavLink>
       <NavLink className='item' to='./pages/12-faq-collapse'>FAQ collapse</NavLink>
       <NavLink className='item' to='./pages/13-random-choice-picker'>Random Choice Picker</NavLink>
+      <NavLink className='item' to='./pages/14-animated-navigation'>Animated Navigation</NavLink>
     </div>
   )
 }
