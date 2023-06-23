@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './RandomChoicePicker.css';
 
-export default function FAQcollapse() {
+export default function RandomChoicePicker() {
   useEffect(() => {
     document.title = 'Random choice picker';
   }, []);
