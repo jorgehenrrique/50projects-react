@@ -20,7 +20,7 @@ export default function RandomChoicePicker() {
       }, 150);
     }
   }, [count]);
-  console.log(count)
+
   function createTags(e) {
     setRand(null);
     setTag(e.trim().split(',').filter(t => t.trim() !== ''));
