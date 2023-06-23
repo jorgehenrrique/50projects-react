@@ -9,7 +9,7 @@ export default function RandomChoicePicker() {
 
   const [tags, setTag] = useState([]);
   const [rand, setRand] = useState(null);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(30);
   const onEnter = useRef();
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function RandomChoicePicker() {
       }, 150);
     }
   }, [count]);
-
+  console.log(count)
   function createTags(e) {
     setRand(null);
     setTag(e.trim().split(',').filter(t => t.trim() !== ''));
@@ -32,7 +32,7 @@ export default function RandomChoicePicker() {
         return;
       }
       onEnter.current.value = '';
-      setCount(1);
+      setCount(0);
     }
   }
 
