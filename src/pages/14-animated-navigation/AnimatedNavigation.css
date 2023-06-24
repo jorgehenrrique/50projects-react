@@ -4,10 +4,10 @@
   background-color: #eafbff;
   background-image: linear-gradient(
     to bottom,
-    #eafbff 0%,
-    #eafbff 50%,
-    #5290f9 50%,
-    #5290f9 100%
+    #ffbfcc 0%,
+    #ffbfcc 50%,
+    #ff7373 50%,
+    #ff7373 100%
   );
   font-family: "Muli", sans-serif;
   display: flex;
@@ -63,7 +63,7 @@
   width: 3rem;
 }
 .nav-14 button .line {
-  background-color: #5290f9;
+  background-color: #ff7373;
   height: 0.2rem;
   width: 2rem;
   position: absolute;
