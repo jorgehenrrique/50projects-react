@@ -15,22 +15,23 @@
   justify-content: center;
   height: 100vh;
 }
-.nav-14 {
-  background-color: #fff;
-  padding: 2rem;
-  width: 8rem;
 
+.nav-14 {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 5px #0000004d;
-  transition: width 0.6s linear;
+  background-color: #fff;
+  padding: 2rem;
+  width: 8rem;
   overflow-x: hidden;
+  transition: width 0.6s linear;
 }
 .nav-14.active {
   width: 35rem;
 }
+
 .nav-14 ul {
   display: flex;
   width: 0;
@@ -53,18 +54,14 @@
   color: #000;
   margin: 0 1rem;
 }
+
 .nav-14 button {
   background-color: #fff;
-  /* border: 0; */
   cursor: pointer;
-  /* padding: 0; */
   position: relative;
   height: 3rem;
   width: 3rem;
 }
-/* .nav-14 button:focus {
-  outline: none;
-} */
 .nav-14 button .line {
   background-color: #5290f9;
   height: 0.2rem;
