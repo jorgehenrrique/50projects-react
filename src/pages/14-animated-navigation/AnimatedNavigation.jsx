@@ -6,7 +6,7 @@ export default function AnimatedNavigation() {
     document.title = 'Animated Navigation';
   }, []);
 
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
 
   return (
     <div className="body-14">
@@ -17,9 +17,9 @@ export default function AnimatedNavigation() {
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button className="icon toggle" onClick={() => setActive(!active)}>
-          <div className="line line1">+</div>
-          <div className="line line2">+</div>
+        <button onClick={() => setActive(!active)}>
+          <div className="line line1"></div>
+          <div className="line line2"></div>
         </button>
       </nav>
     </div>
