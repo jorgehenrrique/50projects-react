@@ -71,19 +71,19 @@ export default function IncrementingCounter() {
 
       <div className="counter-container-15">
         <img src={twitter} alt="Twitter" />
-        <div className="counter-15" data-target="12000">{twitterCount}</div>
+        <div className="counter-15">{twitterCount}</div>
         <span>Twitter Followers</span>
       </div>
 
       <div className="counter-container-15">
         <img src={youtube} alt="YouTube" />
-        <div className="counter-15" data-target="5000">{youtubeCount}</div>
+        <div className="counter-15">{youtubeCount}</div>
         <span>YouTube Subscribers</span>
       </div>
 
       <div className="counter-container-15">
         <img src={instagram} alt="Instagram" />
-        <div className="counter-15" data-target="7500">{instagramCount}</div>
+        <div className="counter-15">{instagramCount}</div>
         <span>Instagram Fans</span>
       </div>
 
