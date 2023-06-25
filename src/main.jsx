@@ -17,6 +17,7 @@ import Eventkeycodes from './pages/11-event-keycodes/Eventkeycodes.jsx';
 import FAQcollapse from './pages/12-faq-collapse/FAQcollapse.jsx';
 import RandomChoicePicker from './pages/13-random-choice-picker/RandomChoicePicker.jsx';
 import AnimatedNavigation from './pages/14-animated-navigation/AnimatedNavigation.jsx';
+import IncrementingCounter from './pages/15-incrementing-counter/IncrementingCounter.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -38,6 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/pages/12-faq-collapse' element={<FAQcollapse />} />
       <Route path='/50projects-react/pages/13-random-choice-picker' element={<RandomChoicePicker />} />
       <Route path='/50projects-react/pages/14-animated-navigation' element={<AnimatedNavigation />} />
+      <Route path='/50projects-react/pages/15-incrementing-counter' element={<IncrementingCounter />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>

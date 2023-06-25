@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 export default function IncrementingCounter() {
   useEffect(() => {
-    document.title = 'Incrementing Counter';
+    document.title = 'Increment Counter';
   }, []);
 
   return (
