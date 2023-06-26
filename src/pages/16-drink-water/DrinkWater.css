@@ -1,4 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
 .body-16 {
-  background-color: #f76;
-  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3494e4;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  /* margin-bottom: 4rem; */
+  min-height: 100vh;
+}
+.body-16 h1 {
+  margin: 1rem 0 0;
+}
+.body-16 h3 {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.copo {
+  background-color: #fff;
+  border: 0.4rem solid #144fc6;
+  color: #144fc6;
+  border-radius: 0 0 4rem 4rem;
+  height: 33rem;
+  width: 15rem;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.copo.copo-pequeno {
+  height: 9.5rem;
+  width: 5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  background-color: #ffffffe6;
+  cursor: pointer;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  transition: 0.3s ease;
+}
+.copo.copo-pequeno.cheio {
+  background-color: #6ab3f8;
+  color: #fff;
+}
+.copos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+}
+
+.restante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+.restante span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.restante small {
+  font-size: 1.2rem;
+}
+
+.percentage {
+  background-color: #6ab3f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text-16 {
+  text-align: center;
+  margin: 0 0 0.5rem;
 }
