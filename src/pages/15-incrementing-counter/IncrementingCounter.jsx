@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import './IncrementingCounter.css';
 import { useEffect, useState } from 'react';
 import instagram from './icon/instagram.png';
