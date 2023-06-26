@@ -8,7 +8,7 @@ export default function DrinkWater() {
   }, []);
 
   return (
-    <div className="body-15">
+    <div className="body-16">
       <h1>Drink Water</h1>
     </div>
   );
