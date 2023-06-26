@@ -101,14 +101,18 @@
 
 - Todos os projetos no diretório `pages` herdam o estilo de reset do arquivo `reset.css`, localizado no diretório `styles/reset.css`.
 
-./pages/projetos
-|
-├── ...
-|
-└── projetos.jsx
+```
+  ./pages/projetos
+  |
+  ├── ...
+  |
+  └── projetos.jsx
 
-./styles/reset.css
-|
-└── ...
+  ./styles/reset.css
+  |
+  └── ...
+```
 
 - Existem outras formas de implementar o mesmo código que podem ser conferidas nos comentários.
+
+* Os projetos possuem classes de CSS com números correspondentes para evitar conflitos.
