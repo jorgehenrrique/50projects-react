@@ -34,15 +34,12 @@ export default function DrinkWater() {
     });
   }
 
-  // useEffect(() => {
-  //   const algumCopoVazio = copoCheio.some((copo) => Object.values(copo)[0] === false);
-  //   console.log('Vazio:', algumCopoVazio);
-  // }, [copoCheio]);
 
   function verificarCopoVazio() {
     const algumCopoVazio = copoCheio.some((copo) => Object.values(copo)[0] === false);
     return algumCopoVazio;
   }
+
   function totalCopoCheio() {
     const cheios = copoCheio.reduce((acumulador, copo) => {
       const valorCopo = Object.values(copo)[0];
@@ -71,15 +68,21 @@ export default function DrinkWater() {
       <h3>Objetivo: 2 litros</h3>
 
       <div className="copo">
-        <div className="restante"
-          style={{ visibility: `${verificarCopoVazio() ? 'visible' : 'hidden'}` }}>
+        <div className="restante-16"
+          style={{
+            visibility: `${verificarCopoVazio() ? 'visible' : 'hidden'}`,
+            height: `${verificarCopoVazio() ? '' : '0'}px`
+          }}>
           <span>{2 - (250 * totalCopoCheio() / 1000)}L</span>
           <small>Restam</small>
         </div>
 
-        <div className="percentage"
-          style={{ height: `${totalCopoCheio() / copoCheio.length * 330}px` }}
-          id="percentage">{totalCopoCheio() / copoCheio.length * 100}%</div>
+        <div className="percentage-16"
+          style={{
+            height: `${totalCopoCheio() / copoCheio.length * 330}px`,
+            visibility: `${totalCopoCheio() === 0 ? 'hidden' : 'visible'}`
+          }}>
+          {totalCopoCheio() / copoCheio.length * 100}%</div>
       </div>
 
       <p className="text-16">Selecione quantos copos de água você bebeu</p>
@@ -87,7 +90,6 @@ export default function DrinkWater() {
       <div className="copos">
         {copos}
       </div >
-
     </div >
   );
 }

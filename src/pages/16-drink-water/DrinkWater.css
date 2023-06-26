@@ -24,7 +24,7 @@
   border: 0.4rem solid #144fc6;
   color: #144fc6;
   border-radius: 0 0 4rem 4rem;
-  height: 33rem;
+  height: 330px;
   width: 15rem;
   margin: 3rem 0;
   display: flex;
@@ -55,7 +55,7 @@
   width: 28rem;
 }
 
-.restante {
+.restante-16 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,15 +63,15 @@
   flex: 1;
   transition: 0.3s ease;
 }
-.restante span {
+.restante-16 span {
   font-size: 2rem;
   font-weight: bold;
 }
-.restante small {
+.restante-16 small {
   font-size: 1.2rem;
 }
 
-.percentage {
+.percentage-16 {
   background-color: #6ab3f8;
   display: flex;
   align-items: center;
@@ -79,7 +79,6 @@
   font-weight: bold;
   font-size: 3rem;
   height: 0;
-  /* height: 33rem; */
   transition: 0.3s ease;
 }
 
