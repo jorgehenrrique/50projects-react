@@ -79,6 +79,7 @@
   font-weight: bold;
   font-size: 3rem;
   height: 0;
+  /* height: 33rem; */
   transition: 0.3s ease;
 }
 

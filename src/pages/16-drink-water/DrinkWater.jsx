@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './DrinkWater.css';
 
 export default function DrinkWater() {
@@ -7,10 +7,61 @@ export default function DrinkWater() {
     document.title = 'Drink Water';
   }, []);
 
+  const [copoCheio, setCopoCheio] = useState([
+    { copo1: false },
+    { copo2: false },
+    { copo3: false },
+    { copo4: false },
+    { copo5: false },
+    { copo6: false },
+    { copo7: false },
+    { copo8: false },
+  ]);
+
+  function handleClick(index) {
+    setCopoCheio((prevState) => {
+      const updatedCopoCheio = prevState.map((copo, i) => {
+        const copoAtual = Object.keys(copo)[0];
+        if (i < index) {
+          return { [copoAtual]: true };
+        } else if (i === index) {
+          return { [copoAtual]: !copo[copoAtual] };
+        } else {
+          return { [copoAtual]: false };
+        }
+      });
+      return updatedCopoCheio;
+    });
+  }
+
+  // useEffect(() => {
+  //   const algumCopoVazio = copoCheio.some((copo) => Object.values(copo)[0] === false);
+  //   console.log('Vazio:', algumCopoVazio);
+  // }, [copoCheio]);
+
+  function verificarCopoVazio() {
+    const algumCopoVazio = copoCheio.some((copo) => Object.values(copo)[0] === false);
+    return algumCopoVazio;
+  }
+  function totalCopoCheio() {
+    const cheios = copoCheio.reduce((acumulador, copo) => {
+      const valorCopo = Object.values(copo)[0];
+      if (valorCopo === true) {
+        return acumulador + 1;
+      }
+      return acumulador;
+    }, 0);
+    return cheios;
+  }
+
   let copos = [];
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 8; index++) {
+    const copoAtual = Object.keys(copoCheio[index])[0];
+
     copos.push(
-      <div key={index} className="copo copo-pequeno">250 ml</div>
+      <div key={index}
+        className={`copo copo-pequeno ${copoCheio[index][copoAtual] ? 'cheio' : ''}`}
+        onClick={() => handleClick(index)}>250 ml</div>
     );
   }
 
@@ -20,28 +71,23 @@ export default function DrinkWater() {
       <h3>Objetivo: 2 litros</h3>
 
       <div className="copo">
-        <div className="restante" id="remained">
-          <span id="liters">1L</span>
+        <div className="restante"
+          style={{ visibility: `${verificarCopoVazio() ? 'visible' : 'hidden'}` }}>
+          <span>{2 - (250 * totalCopoCheio() / 1000)}L</span>
           <small>Restam</small>
         </div>
 
-        <div className="percentage" id="percentage">10%</div>
+        <div className="percentage"
+          style={{ height: `${totalCopoCheio() / copoCheio.length * 330}px` }}
+          id="percentage">{totalCopoCheio() / copoCheio.length * 100}%</div>
       </div>
 
       <p className="text-16">Selecione quantos copos de água você bebeu</p>
 
       <div className="copos">
-        <div className="copo copo-pequeno cheio">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        <div className="copo copo-pequeno">250 ml</div>
-        {/* {copos} */}
-      </div>
+        {copos}
+      </div >
 
-    </div>
+    </div >
   );
 }
