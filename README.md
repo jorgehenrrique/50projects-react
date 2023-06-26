@@ -90,6 +90,10 @@
       <td align="center">15</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/15-incrementing-counter">Increment Counter</a></td>
     </tr>
+    <tr>
+      <td align="center">16</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/15-incrementing-counter">Drink Water</a></td>
+    </tr>
   </tbody>
 </table>
 
