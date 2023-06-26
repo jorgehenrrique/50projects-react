@@ -47,3 +47,9 @@
 .tag.highlight {
   background-color: #273c75;
 }
+
+@media (max-width: 580px) {
+  .container-13 {
+    width: 100%;
+  }
+}
