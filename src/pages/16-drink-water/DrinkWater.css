@@ -7,8 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
-  /* margin-bottom: 4rem; */
   min-height: 100vh;
 }
 .body-16 h1 {

@@ -34,7 +34,6 @@ export default function DrinkWater() {
     });
   }
 
-
   function verificarCopoVazio() {
     const algumCopoVazio = copoCheio.some((copo) => Object.values(copo)[0] === false);
     return algumCopoVazio;
@@ -61,6 +60,7 @@ export default function DrinkWater() {
         onClick={() => handleClick(index)}>250 ml</div>
     );
   }
+
 
   return (
     <div className="body-16">
