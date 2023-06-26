@@ -74,7 +74,7 @@ export default function DrinkWater() {
             height: `${verificarCopoVazio() ? '' : '0'}px`
           }}>
           <span>{2 - (250 * totalCopoCheio() / 1000)}L</span>
-          <small>Restam</small>
+          <small>Restante</small>
         </div>
 
         <div className="percentage-16"
