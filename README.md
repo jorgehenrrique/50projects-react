@@ -92,7 +92,7 @@
     </tr>
     <tr>
       <td align="center">16</td>
-      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/15-incrementing-counter">Drink Water</a></td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/16-drink-water">Drink Water</a></td>
     </tr>
   </tbody>
 </table>
