@@ -1,5 +1,5 @@
 import './IncrementingCounter.css';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import instagram from './icon/instagram.png';
 import twitter from './icon/twitter.png';
 import youtube from './icon/youtube.png';
@@ -9,13 +9,11 @@ export default function IncrementingCounter() {
     document.title = 'Increment Counter';
   }, []);
 
-  const [twitterCount, setTwitterCount] = useState(0);
-  const [youtubeCount, setYoutubeCount] = useState(0);
-  const [instagramCount, setInstagramCount] = useState(0);
-
-  const twitterTimerRef = useRef(null);
-  const youtubeTimerRef = useRef(null);
-  const instagramTimerRef = useRef(null);
+  const [state, setState] = useState({
+    twitterCount: 0,
+    youtubeCount: 0,
+    instagramCount: 0
+  });
 
   useEffect(() => {
     const targetCounts = {
@@ -24,69 +22,43 @@ export default function IncrementingCounter() {
       instagram: 7500,
     };
 
-    const updateCounter = (counterName) => {
+    Object.keys(targetCounts).forEach((counterName) => {
       const target = targetCounts[counterName];
+
       const increment = target / 200;
 
-      if (counterName === 'twitter') {
-        if (twitterCount < target) {
-          twitterTimerRef.current = setTimeout(() => {
-            setTwitterCount((count) => Math.ceil(count + increment));
-          }, 1);
-        } else {
-          setTwitterCount(target);
-        }
-      } else if (counterName === 'youtube') {
-        if (youtubeCount < target) {
-          youtubeTimerRef.current = setTimeout(() => {
-            setYoutubeCount((count) => Math.ceil(count + increment));
-          }, 2);
-        } else {
-          setYoutubeCount(target);
-        }
-      } else if (counterName === 'instagram') {
-        if (instagramCount < target) {
-          instagramTimerRef.current = setTimeout(() => {
-            setInstagramCount((count) => Math.ceil(count + increment));
-          }, 3);
-        } else {
-          setInstagramCount(target);
-        }
+      if (state[counterName + 'Count'] < target) {
+        setTimeout(() => {
+          setState((prev) => ({
+            ...prev,
+            [counterName + 'Count']: Math.ceil(prev[counterName + 'Count'] + increment),
+          }));
+        }, 4);
+      } else {
+        setState((prev) => ({ ...prev, [counterName + 'Count']: target }));
       }
-    };
-
-    updateCounter('twitter');
-    updateCounter('youtube');
-    updateCounter('instagram');
-
-    return () => {
-      clearTimeout(twitterTimerRef.current);
-      clearTimeout(youtubeTimerRef.current);
-      clearTimeout(instagramTimerRef.current);
-    };
-  }, [twitterCount, youtubeCount, instagramCount]);
+    })
+  }, [state.twitterCount, state.youtubeCount, state.instagramCount]);
 
   return (
     <div className="body-15">
-
       <div className="counter-container-15">
         <img src={twitter} alt="Twitter" />
-        <div className="counter-15">{twitterCount}</div>
+        <div className="counter-15">{state.twitterCount}</div>
         <span>Twitter Followers</span>
       </div>
 
       <div className="counter-container-15">
         <img src={youtube} alt="YouTube" />
-        <div className="counter-15">{youtubeCount}</div>
+        <div className="counter-15">{state.youtubeCount}</div>
         <span>YouTube Subscribers</span>
       </div>
 
       <div className="counter-container-15">
         <img src={instagram} alt="Instagram" />
-        <div className="counter-15">{instagramCount}</div>
+        <div className="counter-15">{state.instagramCount}</div>
         <span>Instagram Fans</span>
       </div>
-
     </div>
   );
 }
