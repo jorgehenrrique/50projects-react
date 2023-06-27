@@ -35,7 +35,7 @@ function App() {
       <NavLink className='item' to='./pages/13-random-choice-picker'>Random Choice Picker</NavLink>
       <NavLink className='item' to='./pages/14-animated-navigation'>Animated Navigation</NavLink>
       <NavLink className='item' to='./pages/15-incrementing-counter'>Incrementing Counter</NavLink>
-      <NavLink className='item' to='./pages/16-drink-water'>Drink Water</NavLink>
+      <NavLink className='item' to='./16-drink-water'>Drink Water</NavLink>
     </div>
   )
 }

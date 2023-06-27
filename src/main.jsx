@@ -41,7 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/pages/13-random-choice-picker' element={<RandomChoicePicker />} />
       <Route path='/50projects-react/pages/14-animated-navigation' element={<AnimatedNavigation />} />
       <Route path='/50projects-react/pages/15-incrementing-counter' element={<IncrementingCounter />} />
-      <Route path='/50projects-react/pages/16-drink-water' element={<DrinkWater />} />
+      <Route path='/50projects-react/16-drink-water' element={<DrinkWater />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>
