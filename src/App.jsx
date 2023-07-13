@@ -19,22 +19,22 @@ function App() {
 
   return (
     <div className={`container ${opacity ? "opacity" : ""}`}>
-      <NavLink className='item' to='./pages/01expanding-cards/'>Expanding Cards</NavLink>
-      <NavLink className='item' to='./pages/02progress-steps/'>Progress Steps</NavLink>
-      <NavLink className='item' to='./pages/03rotating-nav-animation/'>Rotating Nav Animation</NavLink>
-      <NavLink className='item' to='./pages/04hidden-search/'>Hidden Search</NavLink>
-      <NavLink className='item' to='./pages/05blurry-loading/'>Blurry Loading</NavLink>
-      <NavLink className='item' to='./pages/06scroll-animation/'>Scroll Animation</NavLink>
-      <NavLink className='item' to='./pages/07split-landing-page/'>Split Landing Page</NavLink>
-      <NavLink className='item' to='./pages/08form-input-wave/'>Form Input Wave</NavLink>
-      <NavLink className='item' to='./pages/09sound-board'>Sound Board</NavLink>
-      <NavLink className='item' to='./pages/10-dad-jokes'>Dad jokes</NavLink>
+      <NavLink className='item' to='./01expanding-cards/'>Expanding Cards</NavLink>
+      <NavLink className='item' to='./02progress-steps/'>Progress Steps</NavLink>
+      <NavLink className='item' to='./03rotating-nav-animation/'>Rotating Nav Animation</NavLink>
+      <NavLink className='item' to='./04hidden-search/'>Hidden Search</NavLink>
+      <NavLink className='item' to='./05blurry-loading/'>Blurry Loading</NavLink>
+      <NavLink className='item' to='./06scroll-animation/'>Scroll Animation</NavLink>
+      <NavLink className='item' to='./07split-landing-page/'>Split Landing Page</NavLink>
+      <NavLink className='item' to='./08form-input-wave/'>Form Input Wave</NavLink>
+      <NavLink className='item' to='./09sound-board'>Sound Board</NavLink>
+      <NavLink className='item' to='./10-dad-jokes'>Dad jokes</NavLink>
 
-      <NavLink className='item' to='./pages/11-event-keycodes'>Event keycodes</NavLink>
-      <NavLink className='item' to='./pages/12-faq-collapse'>FAQ collapse</NavLink>
-      <NavLink className='item' to='./pages/13-random-choice-picker'>Random Choice Picker</NavLink>
-      <NavLink className='item' to='./pages/14-animated-navigation'>Animated Navigation</NavLink>
-      <NavLink className='item' to='./pages/15-incrementing-counter'>Incrementing Counter</NavLink>
+      <NavLink className='item' to='./11-event-keycodes'>Event keycodes</NavLink>
+      <NavLink className='item' to='./12-faq-collapse'>FAQ collapse</NavLink>
+      <NavLink className='item' to='./13-random-choice-picker'>Random Choice Picker</NavLink>
+      <NavLink className='item' to='./14-animated-navigation'>Animated Navigation</NavLink>
+      <NavLink className='item' to='./15-incrementing-counter'>Incrementing Counter</NavLink>
       <NavLink className='item' to='./16-drink-water'>Drink Water</NavLink>
     </div>
   )

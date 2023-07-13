@@ -25,22 +25,22 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BackHome />
     <Routes>
       <Route index path='/50projects-react' element={<App />} />
-      <Route path='/50projects-react/pages/01expanding-cards' element={<ExpandingCards />} />
-      <Route path='/50projects-react/pages/02progress-steps' element={<ProgressSteps />} />
-      <Route path='/50projects-react/pages/03rotating-nav-animation' element={<RotatingNavAnimation />} />
-      <Route path='/50projects-react/pages/04hidden-search' element={<HiddenSearch />} />
-      <Route path='/50projects-react/pages/05blurry-loading' element={<BlurryLoading />} />
-      <Route path='/50projects-react/pages/06scroll-animation' element={<ScrollAnimation />} />
-      <Route path='/50projects-react/pages/07split-landing-page' element={<SplitLandingPage />} />
-      <Route path='/50projects-react/pages/08form-input-wave' element={<FormInputWave />} />
-      <Route path='/50projects-react/pages/09sound-board' element={<SoundBoard />} />
-      <Route path='/50projects-react/pages/10-dad-jokes' element={<Dadjokes />} />
+      <Route path='/50projects-react/01expanding-cards' element={<ExpandingCards />} />
+      <Route path='/50projects-react/02progress-steps' element={<ProgressSteps />} />
+      <Route path='/50projects-react/03rotating-nav-animation' element={<RotatingNavAnimation />} />
+      <Route path='/50projects-react/04hidden-search' element={<HiddenSearch />} />
+      <Route path='/50projects-react/05blurry-loading' element={<BlurryLoading />} />
+      <Route path='/50projects-react/06scroll-animation' element={<ScrollAnimation />} />
+      <Route path='/50projects-react/07split-landing-page' element={<SplitLandingPage />} />
+      <Route path='/50projects-react/08form-input-wave' element={<FormInputWave />} />
+      <Route path='/50projects-react/09sound-board' element={<SoundBoard />} />
+      <Route path='/50projects-react/10-dad-jokes' element={<Dadjokes />} />
 
-      <Route path='/50projects-react/pages/11-event-keycodes' element={<Eventkeycodes />} />
-      <Route path='/50projects-react/pages/12-faq-collapse' element={<FAQcollapse />} />
-      <Route path='/50projects-react/pages/13-random-choice-picker' element={<RandomChoicePicker />} />
-      <Route path='/50projects-react/pages/14-animated-navigation' element={<AnimatedNavigation />} />
-      <Route path='/50projects-react/pages/15-incrementing-counter' element={<IncrementingCounter />} />
+      <Route path='/50projects-react/11-event-keycodes' element={<Eventkeycodes />} />
+      <Route path='/50projects-react/12-faq-collapse' element={<FAQcollapse />} />
+      <Route path='/50projects-react/13-random-choice-picker' element={<RandomChoicePicker />} />
+      <Route path='/50projects-react/14-animated-navigation' element={<AnimatedNavigation />} />
+      <Route path='/50projects-react/15-incrementing-counter' element={<IncrementingCounter />} />
       <Route path='/50projects-react/16-drink-water' element={<DrinkWater />} />
       <Route path='*' element={<App />} />
     </Routes>
