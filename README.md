@@ -6,9 +6,9 @@
 
 ### Projeto Original em JavaScript Vanilla
 
-- O projeto original "50 Projects" pode ser encontrado no seguinte repositório do GitHub:
+- O projeto original "50 Projects 50 days" pode ser encontrado no seguinte repositório do GitHub:
 
-[50 Projects](https://github.com/bradtraversy/50projects50days)
+[50 Projects 50 days](https://github.com/bradtraversy/50projects50days)
 
 ### Página do meu Projeto
 
@@ -21,6 +21,7 @@
 ### Diretórios dos Projetos
 
 - Abaixo estão os projetos atualmente em desenvolvimento:
+- Clique para navegar ao diretório.
 
 <table>
   <thead>
@@ -93,6 +94,10 @@
     <tr>
       <td align="center">16</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/16-drink-water">Drink Water</a></td>
+    </tr>
+    <tr>
+      <td align="center">17</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/17-movie-app">Movie App</a></td>
     </tr>
   </tbody>
 </table>
