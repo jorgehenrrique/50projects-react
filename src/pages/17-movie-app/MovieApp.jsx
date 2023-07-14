@@ -8,7 +8,12 @@ export default function MovieApp() {
 
   return (
     <div className="body-17">
-      <h1>Olá</h1>
+      <header className='header-17'>
+        <input type="search" placeholder='Buscar' />
+      </header>
+      <main className='main-17'>
+
+      </main>
     </div >
   );
 }
