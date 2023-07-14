@@ -19,6 +19,7 @@ import RandomChoicePicker from './pages/13-random-choice-picker/RandomChoicePick
 import AnimatedNavigation from './pages/14-animated-navigation/AnimatedNavigation.jsx';
 import IncrementingCounter from './pages/15-incrementing-counter/IncrementingCounter.jsx';
 import DrinkWater from './pages/16-drink-water/DrinkWater.jsx';
+import MovieApp from './pages/17-movie-app/MovieApp.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -42,6 +43,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/14-animated-navigation' element={<AnimatedNavigation />} />
       <Route path='/50projects-react/15-incrementing-counter' element={<IncrementingCounter />} />
       <Route path='/50projects-react/16-drink-water' element={<DrinkWater />} />
+      <Route path='/50projects-react/17-movie-app' element={<MovieApp />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>

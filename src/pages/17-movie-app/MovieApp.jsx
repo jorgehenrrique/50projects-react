@@ -8,7 +8,7 @@ export default function MovieApp() {
 
   return (
     <div className="body-17">
-
+      <h1>Olá</h1>
     </div >
   );
 }
