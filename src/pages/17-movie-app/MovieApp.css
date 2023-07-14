@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
+:root {
+  --primary-color-17: #262948;
+  --secondary-color-17: #333530;
+}
+
 .body-17 {
   display: grid;
   grid-template-rows: 8rem 1fr;
@@ -12,7 +17,7 @@
 
 .header-17 {
   grid-area: header;
-  background-color: #262948;
+  background-color: var(--primary-color-17);
   padding: 1.6rem;
   display: flex;
   align-items: center;
@@ -20,7 +25,10 @@
 }
 .main-17 {
   grid-area: main;
-  background-color: #333530;
+  background-color: var(--secondary-color-17);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* || input */
@@ -29,14 +37,73 @@
   width: 22rem;
   border-radius: var(--border-radius);
   background-color: transparent;
-  border: 3px solid #333530;
+  border: 3px solid var(--secondary-color-17);
   padding: 0 1.5rem;
   font-size: 1.6rem;
   color: #fff;
 }
 .header-17 input:focus {
-  background-color: #333530;
+  background-color: var(--secondary-color-17);
+  outline: none;
 }
 .header-17 input:hover {
-  background-color: #333530;
+  background-color: var(--secondary-color-17);
+}
+
+/* || Card filme */
+.movie-17 {
+  width: 30rem;
+  margin: 1rem;
+  background-color: var(--primary-color-17);
+  box-shadow: 0 4px 5px #00000033;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+.movie-info-17 {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 1rem 1rem 1rem;
+  letter-spacing: 0.2rem;
+}
+.movie-info-17 span {
+  background-color: var(--secondary-color-17);
+  padding: 0.6rem 0.6rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+}
+
+.green-17 {
+  color: #adff2f;
+}
+.orange-17 {
+  color: #ffa500;
+}
+.red-17 {
+  color: #ff0000;
+}
+
+.visao-geral-17 {
+  background-color: #d3d3d3;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+  text-align: justify;
+}
+.visao-geral-17 h3 {
+  margin: 1rem;
+  font-weight: bold;
+  color: var(--primary-color-17);
+}
+.movie-17:hover .visao-geral-17 {
+  transform: translateY(0);
 }
