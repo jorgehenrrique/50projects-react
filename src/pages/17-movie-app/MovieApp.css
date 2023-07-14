@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 2rem;
 }
 .main-17 {
   grid-area: main;
@@ -29,6 +30,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* || botao */
+.header-17 button {
+  height: 5rem;
+  width: fit-content;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  border: 3px solid var(--secondary-color-17);
+  border-radius: var(--border-radius);
+  color: #fff;
+  transition: 0.2s linear;
+}
+.header-17 button:hover {
+  background-color: var(--secondary-color-17);
+}
+.header-17 button:active {
+  background-color: var(--primary-color-17);
 }
 
 /* || input */
@@ -41,10 +60,10 @@
   padding: 0 1.5rem;
   font-size: 1.6rem;
   color: #fff;
+  transition: 0.2s linear;
 }
 .header-17 input:focus {
   background-color: var(--secondary-color-17);
-  outline: none;
 }
 .header-17 input:hover {
   background-color: var(--secondary-color-17);
@@ -86,7 +105,7 @@
   color: #ff0000;
 }
 
-.visao-geral-17 {
+.overview-17 {
   background-color: #d3d3d3;
   padding: 2rem;
   position: absolute;
@@ -99,11 +118,11 @@
   transition: transform 0.3s ease-in;
   text-align: justify;
 }
-.visao-geral-17 h3 {
+.overview-17 h3 {
   margin: 1rem;
   font-weight: bold;
   color: var(--primary-color-17);
 }
-.movie-17:hover .visao-geral-17 {
+.movie-17:hover .overview-17 {
   transform: translateY(0);
 }
