@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 2rem;
+  gap: 1rem;
 }
 .main-17 {
   grid-area: main;

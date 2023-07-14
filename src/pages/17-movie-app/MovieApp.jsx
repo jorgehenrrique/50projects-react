@@ -63,10 +63,10 @@ export default function MovieApp() {
                   ${movie.vote_average >= 8 ? 'green-17' : ''}`}
                 >{movie.vote_average}</span>
               </div>
-              <div className="overview-17">
-                {movie.overview && <h3>Overview</h3>}
+              {movie.overview && <div className="overview-17">
+                <h3>Overview</h3>
                 {movie.overview}
-              </div>
+              </div>}
             </div>)
         })}
       </main>
