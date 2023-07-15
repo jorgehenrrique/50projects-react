@@ -7,7 +7,7 @@
 
 .body-17 {
   display: grid;
-  grid-template-rows: 8rem 1fr;
+  grid-template-rows: 7rem 1fr;
   grid-template-areas:
     "header"
     "main";
@@ -18,11 +18,15 @@
 .header-17 {
   grid-area: header;
   background-color: var(--primary-color-17);
-  padding: 1.6rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .main-17 {
   grid-area: main;
