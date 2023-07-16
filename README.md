@@ -99,6 +99,10 @@
       <td align="center">17</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/17-movie-app">Movie App</a></td>
     </tr>
+    <tr>
+      <td align="center">18</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/18-background-slider">Background Slider</a></td>
+    </tr>
   </tbody>
 </table>
 
