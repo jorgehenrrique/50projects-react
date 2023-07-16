@@ -37,6 +37,7 @@ function App() {
       <NavLink className='item' to='./15-incrementing-counter'>Incrementing Counter</NavLink>
       <NavLink className='item' to='./16-drink-water'>Drink Water</NavLink>
       <NavLink className='item' to='./17-movie-app'>Movie App</NavLink>
+      <NavLink className='item' to='./18-background-slider'>Background Slider</NavLink>
     </div>
   )
 }
