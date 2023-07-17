@@ -17,7 +17,6 @@
   width: 100%;
   height: 100vh;
   background-color: #000000b3;
-  z-index: -1;
 }
 
 .slider-container-18 {
@@ -28,7 +27,6 @@
   overflow: hidden;
 }
 .slide-18 {
-  /* opacity: 0; */
   height: 100vh;
   width: 100vw;
   background-position: center center;
@@ -39,9 +37,6 @@
   transition: 0.4s ease;
   z-index: 1;
 }
-/* .slide-18.active18 {
-  opacity: 1;
-} */
 
 .arrow18 {
   position: fixed;
@@ -54,9 +49,6 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-/* .arrow18:focus {
-  outline: 0;
-} */
 .left-arrow-18 {
   left: calc(15vw - 6.5rem);
 }
