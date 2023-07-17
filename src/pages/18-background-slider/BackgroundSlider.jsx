@@ -35,7 +35,7 @@ export default function BackgroundSlider() {
   };
 
   return (
-    <div className="body-18">
+    <div className="body-18" style={{ backgroundImage: `url(${imgs[position]})` }}>
       <div className="slider-container-18">
         {/* {imgs.map((img, i) => {
           return ( */}
