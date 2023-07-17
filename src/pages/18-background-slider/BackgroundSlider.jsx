@@ -27,7 +27,7 @@ export default function BackgroundSlider() {
 
     // Limpeza ao desmontar o componente
     return () => {
-      // Remover os elementos <link> do cabeçalho do documento
+      // Remover os elementos <link> do cabeçalho
       imgs.forEach((imgUrl) => {
         const link = document.querySelector(`link[href="${imgUrl}"][rel="prefetch"]`);
         if (link) {
