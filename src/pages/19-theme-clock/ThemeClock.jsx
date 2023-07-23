@@ -41,7 +41,7 @@ export default function ThemeClock() {
   }, []);
 
   return (
-    <div className={`body-19 ${dark ? 'dark-19' : ''}`}>
+    <div className={`body-19 ${dark && 'dark-19'}`}>
       <button onClick={(() => setDark(!dark))}>{!dark ? 'Dark mode' : 'Light mode'}</button>
 
       <div className="clock-container-19">
