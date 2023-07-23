@@ -97,6 +97,7 @@
 
 .time-19 {
   font-size: 6rem;
+  color: var(--primary-color-19);
 }
 
 .date-19 {
@@ -106,7 +107,7 @@
   text-transform: uppercase;
 }
 
-.date-19 .circle {
+.date-19 .circle-19 {
   background-color: var(--primary-color-19);
   color: var(--secondary-color-19);
   border-radius: 50%;
