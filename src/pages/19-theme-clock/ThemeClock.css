@@ -73,6 +73,7 @@
   height: 100px;
   background-color: #e74c3c;
 }
+
 .center-point {
   background-color: #e74c3c;
   width: 1rem;
@@ -106,7 +107,6 @@
   letter-spacing: 0.3px;
   text-transform: uppercase;
 }
-
 .date-19 .circle-19 {
   background-color: var(--primary-color-19);
   color: var(--secondary-color-19);

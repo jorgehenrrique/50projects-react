@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import './ThemeClock.css';
 
@@ -16,7 +15,7 @@ export default function ThemeClock() {
   function setTime() {
     const time = new Date();
     const month = time.getMonth();
-    const day = time.getDate();
+    const day = time.getDay();
     const date = time.getDate();
     const hours = time.getHours();
     const hoursForClock = hours >= 13 ? hours % 12 : hours;
@@ -43,7 +42,6 @@ export default function ThemeClock() {
 
   return (
     <div className={`body-19 ${dark ? 'dark-19' : ''}`}>
-
       <button onClick={(() => setDark(!dark))}>{!dark ? 'Dark mode' : 'Light mode'}</button>
 
       <div className="clock-container-19">
