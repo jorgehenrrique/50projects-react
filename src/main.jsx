@@ -21,6 +21,7 @@ import IncrementingCounter from './pages/15-incrementing-counter/IncrementingCou
 import DrinkWater from './pages/16-drink-water/DrinkWater.jsx';
 import MovieApp from './pages/17-movie-app/MovieApp.jsx';
 import BackgroundSlider from './pages/18-background-slider/BackgroundSlider.jsx';
+import ThemeClock from './pages/19-theme-clock/ThemeClock.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -46,6 +47,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/16-drink-water' element={<DrinkWater />} />
       <Route path='/50projects-react/17-movie-app' element={<MovieApp />} />
       <Route path='/50projects-react/18-background-slider' element={<BackgroundSlider />} />
+      <Route path='/50projects-react/19-theme-clock' element={<ThemeClock />} />
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>

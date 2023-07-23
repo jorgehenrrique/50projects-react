@@ -7,7 +7,7 @@ export default function ThemeClock() {
   }, []);
 
   return (
-    <div className="body-18">
+    <div className="body-19">
       <h1>Olá</h1>
     </div >
   );
