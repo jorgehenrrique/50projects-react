@@ -103,6 +103,10 @@
       <td align="center">18</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/18-background-slider">Background Slider</a></td>
     </tr>
+    <tr>
+      <td align="center">19</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/19-theme-clock">Theme Clock</a></td>
+    </tr>
   </tbody>
 </table>
 
