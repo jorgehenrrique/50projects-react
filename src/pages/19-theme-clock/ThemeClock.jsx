@@ -4,6 +4,10 @@ import './ThemeClock.css';
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
 export default function ThemeClock() {
   useEffect(() => {
     document.title = 'Theme Clock';
@@ -36,10 +40,6 @@ export default function ThemeClock() {
     };
   }, []);
 
-  const scale = (num, in_min, in_max, out_min, out_max) => {
-    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-  }
-
   return (
     <div className={`body-19 ${dark ? 'dark-19' : ''}`}>
       <button onClick={(() => setDark(!dark))}>{!dark ? 'Dark mode' : 'Light mode'}</button>
@@ -59,7 +59,6 @@ export default function ThemeClock() {
           {days[stateTime.day]}, {months[stateTime.month]} <span className='circle-19'>{stateTime.date}</span>
         </div>
       </div>
-
     </div >
   );
 }
