@@ -10,7 +10,7 @@
   transition: 0.4s;
 }
 .body-18::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
