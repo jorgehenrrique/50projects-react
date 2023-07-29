@@ -39,7 +39,7 @@ export default function ButtonRippleEffect() {
 
       <button onClick={handleClick}>Click Me
         {circle && <span className='circle-20'
-          style={style}>🤡</span>}</button>
+          style={style}></span>}</button>
 
     </div>
   );
