@@ -20,7 +20,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding: 3rem 4rem;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: 1rem 0;
   position: relative;
 }
