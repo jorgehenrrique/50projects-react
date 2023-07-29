@@ -8,7 +8,9 @@ export default function ButtonRippleEffect() {
 
   return (
     <div className='body-20'>
-      <h1>oi</h1>
+
+      <button>Click Me</button>
+
     </div>
   );
 }
