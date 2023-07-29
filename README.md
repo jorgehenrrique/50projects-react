@@ -111,6 +111,10 @@
       <td align="center">20</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/20-button-ripple-effect">Button Ripple Effect</a></td>
     </tr>
+    <tr>
+      <td align="center">21</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/21-drag-n-drop">Drag N Drop</a></td>
+    </tr>
   </tbody>
 </table>
 
