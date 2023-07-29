@@ -20,9 +20,7 @@ export default function ButtonRippleEffect() {
     const yInside = y - buttonTop;
 
     setCircle(true);
-    setTimeout(() => {
-      setCircle(false);
-    }, 500);
+    setTimeout(() => setCircle(false), 500);
 
     // Criar objeto com as propriedades CSS dinamicamente
     const circleStyle = {
@@ -38,8 +36,8 @@ export default function ButtonRippleEffect() {
     <div className='body-20'>
 
       <button onClick={handleClick}>Click Me
-        {circle && <span className='circle-20'
-          style={style}></span>}</button>
+        {circle && <span className='circle-20' style={style}></span>}
+      </button>
 
     </div>
   );
