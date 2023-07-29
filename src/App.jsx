@@ -39,6 +39,9 @@ function App() {
       <NavLink className='item' to='./17-movie-app'>Movie App</NavLink>
       <NavLink className='item' to='./18-background-slider'>Background Slider</NavLink>
       <NavLink className='item' to='./19-theme-clock'>Theme Clock</NavLink>
+      <NavLink className='item' to='./20-button-ripple-effect'>Button Ripple Effect</NavLink>
+
+
     </div>
   )
 }

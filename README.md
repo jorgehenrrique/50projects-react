@@ -107,6 +107,10 @@
       <td align="center">19</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/19-theme-clock">Theme Clock</a></td>
     </tr>
+    <tr>
+      <td align="center">20</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/20-button-ripple-effect">Button Ripple Effect</a></td>
+    </tr>
   </tbody>
 </table>
 
