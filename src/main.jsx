@@ -23,6 +23,7 @@ import MovieApp from './pages/17-movie-app/MovieApp.jsx';
 import BackgroundSlider from './pages/18-background-slider/BackgroundSlider.jsx';
 import ThemeClock from './pages/19-theme-clock/ThemeClock.jsx';
 import ButtonRippleEffect from './pages/20-button-ripple-effect/ButtonRippleEffect.jsx';
+import DragNDrop from './pages/21-drag-n-drop/DragNDrop.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -51,6 +52,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/19-theme-clock' element={<ThemeClock />} />
       <Route path='/50projects-react/20-button-ripple-effect' element={<ButtonRippleEffect />} />
 
+      <Route path='/50projects-react/21-drag-n-drop' element={<DragNDrop />} />
 
       <Route path='*' element={<App />} />
     </Routes>
