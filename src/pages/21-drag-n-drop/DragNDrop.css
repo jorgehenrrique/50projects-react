@@ -26,12 +26,17 @@
 
 .hold-21 {
   border: solid 0.5rem #ccc;
+  border-radius: var(--border-radius);
 }
 
 .hovered-21 {
   background-color: #333;
   border-color: #fff;
   border-style: dashed;
+}
+
+.invisible-21 {
+  border: none;
 }
 
 @media (max-width: 800px) {
