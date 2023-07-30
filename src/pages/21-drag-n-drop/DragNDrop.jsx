@@ -15,6 +15,7 @@ export default function DragNDrop() {
 
   const handleDragEnd = () => {
     setIsDragging(false);
+    setHoveredIndex(-1);
   };
 
   const handleDragOver = (e) => {
