@@ -42,7 +42,7 @@ function App() {
       <NavLink className='item' to='./20-button-ripple-effect'>Button Ripple Effect</NavLink>
 
       <NavLink className='item' to='./21-drag-n-drop'>Drag N Drop</NavLink>
-
+      <NavLink className='item' to='./22-drawing-app'>Drawing App</NavLink>
     </div>
   )
 }
