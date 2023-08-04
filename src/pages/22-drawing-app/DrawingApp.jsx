@@ -91,13 +91,12 @@ export default function DrawingApp() {
         width="800" height="700"></canvas>
 
       <div className="toolbox-22">
-        <button id="decrease" onClick={handleDecreaseSize}>-</button>
-        <span id="size">{size}</span>
-        <button id="increase" onClick={handleIncreaseSize}>+</button>
-        <input type="color" id="color"
-          defaultValue={color} onChange={handleColor} />
+        <button onClick={handleDecreaseSize}>-</button>
+        <span>{size}</span>
+        <button onClick={handleIncreaseSize}>+</button>
+        <input type="color" defaultValue={color} onChange={handleColor} />
 
-        <button id="clear" onClick={handleClear}>X</button>
+        <button onClick={handleClear}>X</button>
       </div>
 
     </div>
