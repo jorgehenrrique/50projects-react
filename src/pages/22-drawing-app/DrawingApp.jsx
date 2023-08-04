@@ -8,7 +8,16 @@ export default function DrawingApp() {
 
   return (
     <div className='body-22'>
-      <h1>oi</h1>
+      <canvas className="canvas-22" width="800" height="700"></canvas>
+
+      <div className="toolbox-22">
+        <button id="decrease">-</button>
+        <span id="size">10</span>
+        <button id="increase">+</button>
+        <input type="color" id="color" />
+        <button id="clear">X</button>
+      </div>
+
     </div>
   );
 }
