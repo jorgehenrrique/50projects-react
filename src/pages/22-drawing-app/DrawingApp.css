@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .body-22 {
-  background-color: #f5f5f5;
-  /* background-color: #333; */
+  background-color: #333;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -15,7 +14,7 @@
   border: 0.2rem solid #4682b4;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  /* background-color: #fff; */
+  background-color: #fff;
 }
 
 .toolbox-22 {
@@ -40,7 +39,6 @@
   margin: 0.25rem;
   padding: 0.25rem;
   cursor: pointer;
-  /* border-radius: var(--border-radius); */
 }
 
 .toolbox-22 > *:last-child {
@@ -51,8 +49,5 @@
   .toolbox-22,
   .canvas-22 {
     width: 100%;
-  }
-  .canvas-22 {
-    height: 100%;
   }
 }
