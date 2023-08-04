@@ -115,6 +115,10 @@
       <td align="center">21</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/21-drag-n-drop">Drag N Drop</a></td>
     </tr>
+    <tr>
+      <td align="center">22</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/22-drawing-app">Drawing App</a></td>
+    </tr>
   </tbody>
 </table>
 
