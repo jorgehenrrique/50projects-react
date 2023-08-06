@@ -123,6 +123,10 @@
       <td align="center">23</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/23-kinetic-loader">Kinetic Loader</a></td>
     </tr>
+    <tr>
+      <td align="center">24</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/23-kinetic-loader">Content Placeholder</a></td>
+    </tr>
   </tbody>
 </table>
 
