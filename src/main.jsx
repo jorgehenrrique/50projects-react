@@ -27,6 +27,7 @@ import DragNDrop from './pages/21-drag-n-drop/DragNDrop.jsx';
 import DrawingApp from './pages/22-drawing-app/DrawingApp.jsx';
 import KineticLoader from './pages/23-kinetic-loader/KineticLoader.jsx';
 import ContentPlaceholder from './pages/24-content-placeholder/ContentPlaceholder.jsx';
+import StickyNavigation from './pages/25-sticky-navigation/StickyNavigation.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -59,6 +60,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/22-drawing-app' element={<DrawingApp />} />
       <Route path='/50projects-react/23-kinetic-loader' element={<KineticLoader />} />
       <Route path='/50projects-react/24-content-placeholder' element={<ContentPlaceholder />} />
+      <Route path='/50projects-react/25-sticky-navigation' element={<StickyNavigation />} />
 
       <Route path='*' element={<App />} />
     </Routes>

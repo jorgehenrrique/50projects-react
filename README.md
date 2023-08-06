@@ -127,6 +127,10 @@
       <td align="center">24</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/24-content-placeholder">Content Placeholder</a></td>
     </tr>
+    <tr>
+      <td align="center">25</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/25-sticky-navigation">Sticky Navigation</a></td>
+    </tr>
   </tbody>
 </table>
 

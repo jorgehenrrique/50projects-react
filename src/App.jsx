@@ -45,6 +45,7 @@ function App() {
       <NavLink className='item' to='./22-drawing-app'>Drawing App</NavLink>
       <NavLink className='item' to='./23-kinetic-loader'>Kinetic Loader</NavLink>
       <NavLink className='item' to='./24-content-placeholder'>Content Placeholder</NavLink>
+      <NavLink className='item' to='./25-sticky-navigation'>Sticky Navigation</NavLink>
     </div>
   )
 }
