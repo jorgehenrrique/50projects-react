@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './StickyNavigation.css';
 
 export default function StickyNavigation() {
@@ -6,12 +6,31 @@ export default function StickyNavigation() {
     document.title = 'Sticky Navigation';
   }, []);
 
+  const navRef = useRef();
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', fixNav);
+    return () => {
+      window.removeEventListener('scroll', fixNav);
+    };
+  }, []);
+
+  const fixNav = () => {
+    if (window.scrollY > navRef.current.offsetHeight + 150) {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  };
+
+
   return (
     <div className='body-25'>
 
-      <nav className="nav-25">
+      <nav className={`nav-25 ${isActive ? 'active-25' : ''}`} ref={navRef}>
         <div className="container-25">
-          <h1 className="logo"><a href="/index.html">My Website</a></h1>
+          <h1><a href="/index.html">My Website</a></h1>
           <ul>
             <li><a href="#" className="current-25">Home</a></li>
             <li><a href="#">About</a></li>
