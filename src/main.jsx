@@ -26,6 +26,7 @@ import ButtonRippleEffect from './pages/20-button-ripple-effect/ButtonRippleEffe
 import DragNDrop from './pages/21-drag-n-drop/DragNDrop.jsx';
 import DrawingApp from './pages/22-drawing-app/DrawingApp.jsx';
 import KineticLoader from './pages/23-kinetic-loader/KineticLoader.jsx';
+import ContentPlaceholder from './pages/24-content-placeholder/ContentPlaceholder.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -57,6 +58,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/21-drag-n-drop' element={<DragNDrop />} />
       <Route path='/50projects-react/22-drawing-app' element={<DrawingApp />} />
       <Route path='/50projects-react/23-kinetic-loader' element={<KineticLoader />} />
+      <Route path='/50projects-react/24-content-placeholder' element={<ContentPlaceholder />} />
 
       <Route path='*' element={<App />} />
     </Routes>
