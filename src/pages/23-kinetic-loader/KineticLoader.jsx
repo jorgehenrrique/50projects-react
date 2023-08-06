@@ -9,6 +9,8 @@ export default function KineticLoader() {
   return (
     <div className='body-23'>
 
+      <div className="kinetic"></div>
+
     </div>
   );
 }
