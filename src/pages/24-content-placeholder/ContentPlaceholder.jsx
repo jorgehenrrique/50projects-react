@@ -44,10 +44,10 @@ export default function ContentPlaceholder() {
     <div className='body-24'>
 
       <div className="card-24">
-        <div className={`card-header-24 ${loading && 'animated-bg'}`}>{loading ? '\u00A0' : null}{header}</div>
+        <div className={`card-header-24 ${loading ? 'animated-bg' : ''}`}>{loading ? '\u00A0' : null}{header}</div>
 
         <div className="card-content-24">
-          <h3 className={`card-title-24 ${loading && 'animated-bg animated-bg-text'}`}>{loading ? '\u00A0' : null}{title}</h3>
+          <h3 className={`card-title-24 ${loading ? 'animated-bg animated-bg-text' : ''}`}>{loading ? '\u00A0' : null}{title}</h3>
           <p className="card-excerpt-24">{loading ? '\u00A0' : null}{excerpt}
             {loading &&
               <>
@@ -58,10 +58,10 @@ export default function ContentPlaceholder() {
           </p>
 
           <div className="author-24">
-            <div className={`profile-img-24 ${loading && 'animated-bg'}`}>{loading ? '\u00A0' : null}{profileImg}</div>
+            <div className={`profile-img-24 ${loading ? 'animated-bg' : ''}`}>{loading ? '\u00A0' : null}{profileImg}</div>
             <div className="author-info-24">
-              <strong className={loading && 'animated-bg animated-bg-text'}>{loading ? '\u00A0' : null}{name}</strong>
-              <small className={loading && 'animated-bg animated-bg-text'}>{loading ? '\u00A0' : null}{date}</small>
+              <strong className={loading ? 'animated-bg animated-bg-text' : ''}>{loading ? '\u00A0' : null}{name}</strong>
+              <small className={loading ? 'animated-bg animated-bg-text' : ''}>{loading ? '\u00A0' : null}{date}</small>
             </div>
           </div>
 
