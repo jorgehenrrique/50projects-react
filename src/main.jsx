@@ -25,6 +25,7 @@ import ThemeClock from './pages/19-theme-clock/ThemeClock.jsx';
 import ButtonRippleEffect from './pages/20-button-ripple-effect/ButtonRippleEffect.jsx';
 import DragNDrop from './pages/21-drag-n-drop/DragNDrop.jsx';
 import DrawingApp from './pages/22-drawing-app/DrawingApp.jsx';
+import KineticLoader from './pages/23-kinetic-loader/KineticLoader.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -55,6 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <Route path='/50projects-react/21-drag-n-drop' element={<DragNDrop />} />
       <Route path='/50projects-react/22-drawing-app' element={<DrawingApp />} />
+      <Route path='/50projects-react/23-kinetic-loader' element={<KineticLoader />} />
 
       <Route path='*' element={<App />} />
     </Routes>

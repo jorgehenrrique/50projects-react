@@ -119,6 +119,10 @@
       <td align="center">22</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/22-drawing-app">Drawing App</a></td>
     </tr>
+    <tr>
+      <td align="center">23</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/23-kinetic-loader">Kinetic Loader</a></td>
+    </tr>
   </tbody>
 </table>
 

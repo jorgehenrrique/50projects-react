@@ -43,6 +43,7 @@ function App() {
 
       <NavLink className='item' to='./21-drag-n-drop'>Drag N Drop</NavLink>
       <NavLink className='item' to='./22-drawing-app'>Drawing App</NavLink>
+      <NavLink className='item' to='./23-kinetic-loader'>Kinetic Loader</NavLink>
     </div>
   )
 }
