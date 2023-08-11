@@ -29,6 +29,10 @@ export default function DoubleVerticalSlider() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  console.log(positionLeft)
+  console.log(positionRight)
+
+
   const handleSlideUp = () => {
     if (positionRight === sliderRight.length - 1) {
       setPositionRight(0);
@@ -55,30 +59,15 @@ export default function DoubleVerticalSlider() {
     <div className='body-26'>
 
       <div className="slider-container-26">
-        <div className="left-slide-26" style={{ transform: `translateY(-${positionLeft * 100}vh)` }}>
-          <div style={{ backgroundColor: '#FD3555' }}>
-            <h1>Nature flower</h1>
-            <p>all in pink</p>
-          </div>
-          <div style={{ backgroundColor: '#2A86BA' }}>
-            <h1>Bluuue Sky</h1>
-            <p>with its mountains</p>
-          </div>
-          <div style={{ backgroundColor: '#252E33' }}>
-            <h1>Lonely castle</h1>
-            <p>in the wilderness</p>
-          </div>
-          <div style={{ backgroundColor: '#FFB866' }}>
-            <h1>Flying eagle</h1>
-            <p>in the sunset</p>
+        <div className="left-slide-26" style={{ transform: `translateY(${positionLeft * 100}vh)` }}>
+          <div style={{ backgroundColor: `${sliderLeft[positionLeft].backgroundColor}` }}>
+            <h1>{sliderLeft[positionLeft].h1}</h1>
+            <p>{sliderLeft[positionLeft].p}</p>
           </div>
         </div>
 
         <div className="right-slide-26" style={{ transform: `translateY(-${positionRight * 100}vh)` }}>
-          <div style={{ backgroundImage: `url(${sliderRight[0]})` }}></div>
-          <div style={{ backgroundImage: `url(${sliderRight[1]})` }}></div>
-          <div style={{ backgroundImage: `url(${sliderRight[2]})` }}></div>
-          <div style={{ backgroundImage: `url(${sliderRight[3]})` }}></div>
+          <div style={{ backgroundImage: `url(${sliderRight[positionRight]})` }}></div>
         </div>
 
         <div className="action-buttons-26">
