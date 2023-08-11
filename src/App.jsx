@@ -46,6 +46,7 @@ function App() {
       <NavLink className='item' to='./23-kinetic-loader'>Kinetic Loader</NavLink>
       <NavLink className='item' to='./24-content-placeholder'>Content Placeholder</NavLink>
       <NavLink className='item' to='./25-sticky-navigation'>Sticky Navigation</NavLink>
+      <NavLink className='item' to='./26-double-vertical-slider'>Double Vertical Slider</NavLink>
     </div>
   )
 }

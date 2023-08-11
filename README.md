@@ -131,6 +131,10 @@
       <td align="center">25</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/25-sticky-navigation">Sticky Navigation</a></td>
     </tr>
+    <tr>
+      <td align="center">26</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/26-double-vertical-slider">Double Vertical Slider</a></td>
+    </tr>
   </tbody>
 </table>
 

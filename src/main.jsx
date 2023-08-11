@@ -28,6 +28,7 @@ import DrawingApp from './pages/22-drawing-app/DrawingApp.jsx';
 import KineticLoader from './pages/23-kinetic-loader/KineticLoader.jsx';
 import ContentPlaceholder from './pages/24-content-placeholder/ContentPlaceholder.jsx';
 import StickyNavigation from './pages/25-sticky-navigation/StickyNavigation.jsx';
+import DoubleVerticalSlider from './pages/26-double-vertical-slider/DoubleVerticalSlider.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -61,6 +62,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/23-kinetic-loader' element={<KineticLoader />} />
       <Route path='/50projects-react/24-content-placeholder' element={<ContentPlaceholder />} />
       <Route path='/50projects-react/25-sticky-navigation' element={<StickyNavigation />} />
+      <Route path='/50projects-react/26-double-vertical-slider' element={<DoubleVerticalSlider />} />
 
       <Route path='*' element={<App />} />
     </Routes>
