@@ -56,21 +56,21 @@ export default function DoubleVerticalSlider() {
 
       <div className="slider-container-26">
         <div className="left-slide-26" style={{ transform: `translateY(-${positionLeft * 100}vh)` }}>
-          <div style={{ backgroundColor: '#FD3555' }}>
-            <h1>Nature flower</h1>
-            <p>all in pink</p>
+          <div style={{ backgroundColor: `${sliderLeft[0].backgroundColor}` }}>
+            <h1>{sliderLeft[0].h1}</h1>
+            <p>{sliderLeft[0].p}</p>
           </div>
-          <div style={{ backgroundColor: '#2A86BA' }}>
-            <h1>Bluuue Sky</h1>
-            <p>with its mountains</p>
+          <div style={{ backgroundColor: `${sliderLeft[1].backgroundColor}` }}>
+            <h1>{sliderLeft[1].h1}</h1>
+            <p>{sliderLeft[1].p}</p>
           </div>
-          <div style={{ backgroundColor: '#252E33' }}>
-            <h1>Lonely castle</h1>
-            <p>in the wilderness</p>
+          <div style={{ backgroundColor: `${sliderLeft[2].backgroundColor}` }}>
+            <h1>{sliderLeft[2].h1}</h1>
+            <p>{sliderLeft[2].p}</p>
           </div>
-          <div style={{ backgroundColor: '#FFB866' }}>
-            <h1>Flying eagle</h1>
-            <p>in the sunset</p>
+          <div style={{ backgroundColor: `${sliderLeft[3].backgroundColor}` }}>
+            <h1>{sliderLeft[3].h1}</h1>
+            <p>{sliderLeft[3].p}</p>
           </div>
         </div>
 
