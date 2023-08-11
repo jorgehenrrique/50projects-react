@@ -1,2 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .body-26 {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+.slider-container-26 {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide-26 {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.left-slide-26 > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.left-slide-26 h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+
+.right-slide-26 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+.right-slide-26 > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.action-buttons-26 button {
+  background-color: #fff;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+.action-buttons-26 button:hover {
+  color: #222;
+}
+
+.slider-container-26 .action-buttons-26 button:nth-child(1) {
+  transform: translateX(-100%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.slider-container-26 .action-buttons-26 button:nth-child(2) {
+  transform: translateY(-100%);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
