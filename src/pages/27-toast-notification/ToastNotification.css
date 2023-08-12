@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.body-27 {
+  background-color: #694989;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.body-27 button {
+  background-color: #fff;
+  color: #663399;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+.body-27 button:active {
+  transform: scale(0.98);
+}
+
+.toasts-container-27 {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.toasts-27 {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 1.5rem 3rem;
+  margin: 0.5rem 0;
+}
+
+.toasts-27.info {
+  color: #663399;
+}
+.toasts-27.success {
+  color: #080;
+}
+.toasts-27.error {
+  color: #f00;
+}
