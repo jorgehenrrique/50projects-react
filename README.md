@@ -135,6 +135,10 @@
       <td align="center">26</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/26-double-vertical-slider">Double Vertical Slider</a></td>
     </tr>
+    <tr>
+      <td align="center">27</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/27-toast-notification">Toast Notification</a></td>
+    </tr>
   </tbody>
 </table>
 
