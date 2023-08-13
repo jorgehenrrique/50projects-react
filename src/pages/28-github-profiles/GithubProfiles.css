@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.body-28 {
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #2a2a72; */
+  background-color: #12171e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.body-28 form {
+  width: 100%;
+  max-width: 70rem;
+}
+
+.body-28 form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border-radius: var(--border-radius);
+  color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.body-28 form input::placeholder {
+  color: #bbb;
+}
+
+.card-28 {
+  max-width: 80rem;
+  background-color: #4c2885;
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.avatar-28 {
+  border-radius: 50%;
+  border: 1rem solid #2a2a72;
+  height: 15rem;
+  width: 15rem;
+}
+
+.user-info-28 {
+  color: #eee;
+  margin-left: 2rem;
+}
+/* .user-info-28 h2 {
+  margin-top: 0;
+} */
+.user-info-28 ul {
+  /* list-style-type: none; */
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0; */
+  max-width: 40rem;
+}
+.user-info-28 ul li {
+  display: flex;
+  align-items: center;
+}
+.user-info-28 ul li strong {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.repo-28 {
+  /* text-decoration: none; */
+  color: #fff;
+  background-color: #212a72;
+  font-size: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .card-28 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body-28 form {
+    max-width: 40rem;
+  }
+}
