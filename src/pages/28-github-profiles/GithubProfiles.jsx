@@ -35,7 +35,7 @@ export default function GithubProfiles() {
           setMsgError(<div className='card-28'><h1>No profile with this username</h1></div>);
         } else {
           setMsgError(null);
-          res.json();
+          return res.json();
         }
       })
       .then((data) => setGithubData(data))
@@ -77,14 +77,18 @@ export default function GithubProfiles() {
                 <h2>{githubData.name || githubData.login}</h2>
                 {githubData.bio && <p>{githubData.bio}</p>}
                 <ul>
-                  <li>{githubData.fallowers} <strong>Fallowers</strong></li>
-                  <li>{githubData.fallowing} <strong>Fallowing</strong></li>
-                  <li>{githubData.publib_repos} <strong>Repos</strong></li>
+                  <li>{githubData.followers} <strong>Fallowers</strong></li>
+                  <li>{githubData.following} <strong>Fallowing</strong></li>
+                  <li>{githubData.public_repos} <strong>Repos</strong></li>
                 </ul>
 
 
                 {githubRepos && <div className="repo-28">
-
+                  {githubRepos.slice(0, 5).map((repo) => {
+                    return (
+                      console.log(repo)
+                    )
+                  })}
                 </div>}
               </div>
             </div>
