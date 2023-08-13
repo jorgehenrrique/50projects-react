@@ -30,6 +30,7 @@ import ContentPlaceholder from './pages/24-content-placeholder/ContentPlaceholde
 import StickyNavigation from './pages/25-sticky-navigation/StickyNavigation.jsx';
 import DoubleVerticalSlider from './pages/26-double-vertical-slider/DoubleVerticalSlider.jsx';
 import ToastNotification from './pages/27-toast-notification/ToastNotification.jsx';
+import GithubProfiles from './pages/28-github-profiles/GithubProfiles.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -65,6 +66,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/25-sticky-navigation' element={<StickyNavigation />} />
       <Route path='/50projects-react/26-double-vertical-slider' element={<DoubleVerticalSlider />} />
       <Route path='/50projects-react/27-toast-notification' element={<ToastNotification />} />
+      <Route path='/50projects-react/28-github-profiles' element={<GithubProfiles />} />
 
       <Route path='*' element={<App />} />
     </Routes>

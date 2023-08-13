@@ -48,6 +48,7 @@ function App() {
       <NavLink className='item' to='./25-sticky-navigation'>Sticky Navigation</NavLink>
       <NavLink className='item' to='./26-double-vertical-slider'>Double Vertical Slider</NavLink>
       <NavLink className='item' to='./27-toast-notification'>Toast Notification</NavLink>
+      <NavLink className='item' to='./28-github-profiles'>Github Profiles</NavLink>
     </div>
   )
 }
