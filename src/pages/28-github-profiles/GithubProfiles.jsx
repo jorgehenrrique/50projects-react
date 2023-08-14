@@ -22,9 +22,12 @@ export default function GithubProfiles() {
 
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
-      getUser(inputSearch.current.value.trim());
-      getRepos(inputSearch.current.value.trim());
-      inputSearch.current.value = '';
+      const user = inputSearch.current.value.trim();
+      if (user) {
+        getUser(user);
+        getRepos(user);
+        inputSearch.current.value = '';
+      }
     }
   };
 
@@ -79,9 +82,8 @@ export default function GithubProfiles() {
                   <li>{githubData.public_repos} <strong>Repos</strong></li>
                 </ul>
 
-
                 {githubRepos && <div className="repos-28">
-                  {githubRepos.slice(0, 5).map((repo, idx) => {
+                  {githubRepos.slice(0, 6).map((repo, idx) => {
                     return (
                       <a key={idx}
                         className='repo-28'
