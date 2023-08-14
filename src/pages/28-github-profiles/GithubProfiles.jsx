@@ -36,9 +36,11 @@ export default function GithubProfiles() {
       .then((res) => {
         if (res.status == 404) {
           setMsgError(<div className='card-28'><h1>No profile with this username</h1></div>);
-        } else {
+        } else if (res.status === 200) {
           setMsgError(null);
           return res.json();
+        } else {
+          setMsgError(<div className='card-28'><h1>Service currently unavailable</h1></div>);
         }
       })
       .then((data) => setGithubData(data))
@@ -49,7 +51,14 @@ export default function GithubProfiles() {
 
   const getRepos = (username) => {
     fetch(`${APIURL}${username}/repos?sort=created`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === 200) {
+          setMsgError(null);
+          return res.json();
+        } else {
+          setMsgError(<div className='card-28'><h1>Service currently unavailable</h1></div>);
+        }
+      })
       .then((data) => setGithubRepos(data))
       .catch(() => {
         setMsgError(<div className='card-28'><h1>Problem fetching repos</h1></div>);
