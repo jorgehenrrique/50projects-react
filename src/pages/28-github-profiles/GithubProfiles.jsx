@@ -52,9 +52,6 @@ export default function GithubProfiles() {
         setMsgError(<div className='card-28'><h1>Problem fetching repos</h1></div>);
       })
   };
-  console.log(githubData)
-  console.log(githubRepos)
-  console.log(msgError)
 
   return (
     <div className='body-28'>
@@ -83,10 +80,14 @@ export default function GithubProfiles() {
                 </ul>
 
 
-                {githubRepos && <div className="repo-28">
-                  {githubRepos.slice(0, 5).map((repo) => {
+                {githubRepos && <div className="repos-28">
+                  {githubRepos.slice(0, 5).map((repo, idx) => {
                     return (
-                      console.log(repo)
+                      <a key={idx}
+                        className='repo-28'
+                        href={repo.html_url}
+                        target='_blank'
+                        rel="noreferrer">{repo.name}</a>
                     )
                   })}
                 </div>}
@@ -97,6 +98,6 @@ export default function GithubProfiles() {
         {msgError && msgError}
       </main>
 
-    </div>
+    </div >
   );
 }

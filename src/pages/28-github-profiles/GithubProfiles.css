@@ -2,8 +2,7 @@
 
 .body-28 {
   font-family: 'Poppins', sans-serif;
-  /* background-color: #2a2a72; */
-  background-color: #12171e;
+  background-color: #1a1a47;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -17,7 +16,6 @@
   width: 100%;
   max-width: 70rem;
 }
-
 .body-28 form input {
   width: 100%;
   display: block;
@@ -49,45 +47,46 @@
 .avatar-28 {
   border-radius: 50%;
   border: 1rem solid #2a2a72;
-  height: 15rem;
-  width: 15rem;
+  width: 30rem;
 }
 
 .user-info-28 {
   color: #eee;
   margin-left: 2rem;
+  text-align: justify;
+}
+.user-info-28 h2 {
+  margin-bottom: 3rem;
 }
 .user-info-28 p {
-  text-align: justify;
   margin: 3rem 0;
   max-width: 56rem;
 }
-/* .user-info-28 h2 {
-  padding: 1rem;
-} */
 .user-info-28 ul {
-  /* list-style-type: none; */
   display: flex;
   justify-content: space-between;
-  /* padding: 0; */
   max-width: 40rem;
 }
 .user-info-28 ul li {
   display: flex;
   align-items: center;
+  font-size: 2.4rem;
+  margin-right: 1rem;
 }
 .user-info-28 ul li strong {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-left: 0.5rem;
 }
 
+.repos-28 {
+  margin: 2rem 0;
+}
 .repo-28 {
-  /* text-decoration: none; */
-  /* margin-top: 1rem; */
+  margin-top: 1rem;
   color: #fff;
   background-color: #212a72;
-  font-size: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 1.4rem;
+  padding: 1rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   display: inline-block;
