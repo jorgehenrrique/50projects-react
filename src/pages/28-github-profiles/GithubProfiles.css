@@ -47,7 +47,10 @@
 .avatar-28 {
   border-radius: 50%;
   border: 1rem solid #2a2a72;
-  width: 30rem;
+  width: 24rem;
+  height: 24rem;
+  max-width: 24rem;
+  max-height: 24rem;
 }
 
 .user-info-28 {
