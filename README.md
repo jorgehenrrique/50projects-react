@@ -143,6 +143,10 @@
       <td align="center">28</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/28-github-profiles">Github Profiles</a></td>
     </tr>
+    <tr>
+      <td align="center">29</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/29-double-click-heart">Double Click Heart</a></td>
+    </tr>
   </tbody>
 </table>
 
