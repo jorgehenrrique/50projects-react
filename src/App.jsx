@@ -49,6 +49,7 @@ function App() {
       <NavLink className='item' to='./26-double-vertical-slider'>Double Vertical Slider</NavLink>
       <NavLink className='item' to='./27-toast-notification'>Toast Notification</NavLink>
       <NavLink className='item' to='./28-github-profiles'>Github Profiles</NavLink>
+      <NavLink className='item' to='./29-double-click-heart'>Double Click Heart</NavLink>
     </div>
   )
 }
