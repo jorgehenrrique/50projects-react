@@ -54,7 +54,7 @@ export default function DoubleClickHeart() {
 
       <div className="loveMe-29"
         onDoubleClick={handleDoubleClick} style={{ userSelect: 'none' }}>
-        {clicked && <i className='heart-29' style={style}>{getRandomHeart()}</i>}
+        {clicked && <span className='heart-29' style={style}>{getRandomHeart()}</span>}
       </div>
 
     </div>
