@@ -147,6 +147,10 @@
       <td align="center">29</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/29-double-click-heart">Double Click Heart</a></td>
     </tr>
+    <tr>
+      <td align="center">30</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/30-auto-text-effect">Auto Text Effect</a></td>
+    </tr>
   </tbody>
 </table>
 
