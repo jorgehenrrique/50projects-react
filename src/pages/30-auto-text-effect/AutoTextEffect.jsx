@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import './AutoTextEffect.css';
 
@@ -10,7 +11,7 @@ export default function AutoTextEffect() {
   const [speed, setSpeed] = useState(1);
   const text = 'We Love Programming!';
   const speedText = 300 / speed;
-  let idx = 0;
+  let idx = 1;
   let timeout;
 
   const handleSpeed = (e) => {
@@ -22,17 +23,18 @@ export default function AutoTextEffect() {
     setTextStart(text.slice(0, idx));
     idx++;
 
-    if (idx > text.length) {
-      idx = 0;
-    }
+    if (idx > text.length) idx = 1;
 
     timeout = setTimeout(writeText, speedText);
   };
 
   useEffect(() => {
-    clearTimeout(timeout); // Limpa qualquer timeout pendente
+    // Limpa timeout pendente
+    clearTimeout(timeout);
     writeText();
-    return () => clearTimeout(timeout); // Limpa o timeout ao desmontar o componente
+
+    // Limpa o timeout ao desmontar o componente
+    return () => clearTimeout(timeout);
   }, [speedText]);
 
   return (
