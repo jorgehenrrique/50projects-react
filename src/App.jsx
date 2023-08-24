@@ -50,6 +50,7 @@ function App() {
       <NavLink className='item' to='./27-toast-notification'>Toast Notification</NavLink>
       <NavLink className='item' to='./28-github-profiles'>Github Profiles</NavLink>
       <NavLink className='item' to='./29-double-click-heart'>Double Click Heart</NavLink>
+      <NavLink className='item' to='./30-auto-text-effect'>Auto Text Effect</NavLink>
     </div>
   )
 }
