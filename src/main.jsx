@@ -72,6 +72,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/29-double-click-heart' element={<DoubleClickHeart />} />
       <Route path='/50projects-react/30-auto-text-effect' element={<AutoTextEffect />} />
 
+
+
       <Route path='*' element={<App />} />
     </Routes>
   </BrowserRouter>
