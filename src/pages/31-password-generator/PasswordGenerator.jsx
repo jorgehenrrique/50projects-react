@@ -44,14 +44,13 @@ export default function PasswordGenerator() {
 
   function generatePassword(upper, lower, number, symbol, length) {
     let generatedPassword = ''
-    const typesCount = lower + upper + number + symbol
     const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0])
 
-    if (typesCount === 0) {
+    if (typesArr.length === 0) {
       return ''
     }
 
-    for (let i = 0; i < length; i += typesCount) {
+    for (let i = 0; i < length; i += typesArr.length) {
       typesArr.forEach(type => {
         const funcName = Object.keys(type)[0]
         generatedPassword += randomFunc[funcName]()
@@ -70,7 +69,6 @@ export default function PasswordGenerator() {
     }
     return;
   };
-
 
   return (
     <div className='body-31'>
