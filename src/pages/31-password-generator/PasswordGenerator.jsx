@@ -39,16 +39,10 @@ export default function PasswordGenerator() {
   }
 
   const handleGenerate = () => {
-    const length = pLength;
-    const hasUpper = includeUppercase
-    const hasLower = includeLowercase
-    const hasNumber = includeNumbers
-    const hasSymbol = includeSymbols
-
-    generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+    generatePassword(includeUppercase, includeLowercase, includeNumbers, includeSymbols, pLength);
   };
 
-  function generatePassword(lower, upper, number, symbol, length) {
+  function generatePassword(upper, lower, number, symbol, length) {
     let generatedPassword = ''
     const typesCount = lower + upper + number + symbol
     const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0])
