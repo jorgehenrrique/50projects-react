@@ -151,6 +151,10 @@
       <td align="center">30</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/30-auto-text-effect">Auto Text Effect</a></td>
     </tr>
+    <tr>
+      <td align="center">31</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/31-password-generator">Password Generator</a></td>
+    </tr>
   </tbody>
 </table>
 
