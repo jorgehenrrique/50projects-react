@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
-import './cssName.css';
+import './PasswordGenerator.css';
 
-export default function Component() {
+export default function PasswordGenerator() {
   useEffect(() => {
-    document.title = 'PageName';
+    document.title = 'Password Generator';
   }, []);
 
   return (
     <div className='body-31'>
-
+      oi
     </div>
   );
 }

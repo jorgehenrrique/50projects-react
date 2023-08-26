@@ -33,6 +33,7 @@ import ToastNotification from './pages/27-toast-notification/ToastNotification.j
 import GithubProfiles from './pages/28-github-profiles/GithubProfiles.jsx';
 import DoubleClickHeart from './pages/29-double-click-heart/DoubleClickHeart.jsx';
 import AutoTextEffect from './pages/30-auto-text-effect/AutoTextEffect.jsx';
+import PasswordGenerator from './pages/31-password-generator/PasswordGenerator.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -72,7 +73,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/29-double-click-heart' element={<DoubleClickHeart />} />
       <Route path='/50projects-react/30-auto-text-effect' element={<AutoTextEffect />} />
 
-
+      <Route path='/50projects-react/31-password-generator' element={<PasswordGenerator />} />
 
       <Route path='*' element={<App />} />
     </Routes>
