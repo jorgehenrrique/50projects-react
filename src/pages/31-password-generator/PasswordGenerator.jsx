@@ -22,20 +22,20 @@ export default function PasswordGenerator() {
   }
 
   function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
   }
 
   function getRandomUpper() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
   }
 
   function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
   }
 
   function getRandomSymbol() {
-    const symbols = '!@#$%^&*(){}[]=<>/,.'
-    return symbols[Math.floor(Math.random() * symbols.length)]
+    const symbols = '!@#$%^&*(){}[]=<>/,.';
+    return symbols[Math.floor(Math.random() * symbols.length)];
   }
 
   const handleGenerate = () => {
@@ -43,21 +43,21 @@ export default function PasswordGenerator() {
   };
 
   function generatePassword(upper, lower, number, symbol, length) {
-    let generatedPassword = ''
-    const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0])
+    let generatedPassword = '';
+    const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
 
     if (typesArr.length === 0) {
-      return ''
+      return '';
     }
 
     for (let i = 0; i < length; i += typesArr.length) {
       typesArr.forEach(type => {
-        const funcName = Object.keys(type)[0]
-        generatedPassword += randomFunc[funcName]()
+        const funcName = Object.keys(type)[0];
+        generatedPassword += randomFunc[funcName]();
       })
     }
 
-    const finalPassword = generatedPassword.slice(0, length)
+    const finalPassword = generatedPassword.slice(0, length);
 
     return setResult(finalPassword);
   }
@@ -65,7 +65,7 @@ export default function PasswordGenerator() {
   const handleCopy = () => {
     if (result) {
       navigator.clipboard.writeText(result);
-      alert('Password copied to clipboard!')
+      alert('Password copied to clipboard!');
     }
     return;
   };
