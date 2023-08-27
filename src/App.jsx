@@ -53,6 +53,7 @@ function App() {
       <NavLink className='item' to='./30-auto-text-effect'>Auto Text Effect</NavLink>
 
       <NavLink className='item' to='./31-password-generator'>Password Generator</NavLink>
+      <NavLink className='item' to='./32-good-cheap-fast'>Good Cheap Fast</NavLink>
 
     </div>
   )
