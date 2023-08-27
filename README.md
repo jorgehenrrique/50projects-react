@@ -155,6 +155,10 @@
       <td align="center">31</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/31-password-generator">Password Generator</a></td>
     </tr>
+    <tr>
+      <td align="center">32</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/32-good-cheap-fast">Good Cheap Fast</a></td>
+    </tr>
   </tbody>
 </table>
 
