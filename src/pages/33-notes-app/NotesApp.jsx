@@ -8,7 +8,6 @@ export default function NotesApp() {
   }, []);
 
   const [notes, setNotes] = useState([]);
-  const [text, setText] = useState('');
 
   useEffect(() => {
     setNotes(JSON.parse(localStorage.getItem('notes')) ?? []);
@@ -23,7 +22,7 @@ export default function NotesApp() {
     const updatedNotes = [...notes];
     const newNote = {
       id: updatedNotes.length + 1,
-      text: text,
+      text: '',
       isEditing: false,
     };
     updatedNotes.push(newNote);
