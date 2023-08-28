@@ -1,6 +1,5 @@
 
 import { useEffect, useState } from 'react';
-// import * as marked from 'marked';
 import './NotesApp.css';
 
 export default function NotesApp() {
@@ -12,10 +11,12 @@ export default function NotesApp() {
   const [text, setText] = useState('');
 
   useEffect(() => {
-    const storedNotes = JSON.parse(localStorage.getItem('notes'));
-    if (storedNotes) {
-      setNotes(storedNotes);
-    }
+    setNotes(JSON.parse(localStorage.getItem('notes')) ?? []);
+    // Alternativa verbosa a baixo.
+    // const storedNotes = JSON.parse(localStorage.getItem('notes'));
+    // if (storedNotes) {
+    //   setNotes(storedNotes);
+    // }
   }, []);
 
   const addNewNote = () => {
@@ -23,7 +24,7 @@ export default function NotesApp() {
     const newNote = {
       id: updatedNotes.length + 1,
       text: text,
-      isEditing: true,
+      isEditing: false,
     };
     updatedNotes.push(newNote);
     setNotes(updatedNotes);
@@ -31,8 +32,7 @@ export default function NotesApp() {
   };
 
   const updateLS = (updatedNotes) => {
-    const notesText = updatedNotes.map((note) => note.text);
-    localStorage.setItem('notes', JSON.stringify(notesText));
+    localStorage.setItem('notes', JSON.stringify(updatedNotes));
   };
 
   const handleDeleteNote = (index) => {
@@ -47,6 +47,7 @@ export default function NotesApp() {
     const note = updatedNotes[index];
     note.isEditing = !note.isEditing;
     setNotes(updatedNotes);
+    updateLS(updatedNotes);
   };
 
   const handleNoteChange = (index, e) => {
@@ -54,6 +55,7 @@ export default function NotesApp() {
     const note = updatedNotes[index];
     note.text = e.target.value;
     setNotes(updatedNotes);
+    updateLS(updatedNotes);
   };
 
   return (
