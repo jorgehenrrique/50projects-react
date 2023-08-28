@@ -54,6 +54,7 @@ function App() {
 
       <NavLink className='item' to='./31-password-generator'>Password Generator</NavLink>
       <NavLink className='item' to='./32-good-cheap-fast'>Good Cheap Fast</NavLink>
+      <NavLink className='item' to='./33-notes-app'>Notes App</NavLink>
 
     </div>
   )

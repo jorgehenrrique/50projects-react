@@ -35,6 +35,7 @@ import DoubleClickHeart from './pages/29-double-click-heart/DoubleClickHeart.jsx
 import AutoTextEffect from './pages/30-auto-text-effect/AutoTextEffect.jsx';
 import PasswordGenerator from './pages/31-password-generator/PasswordGenerator.jsx';
 import GoodCheapFast from './pages/32-good-cheap-fast/GoodCheapFast.jsx';
+import NotesApp from './pages/33-notes-app/NotesApp.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -76,6 +77,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <Route path='/50projects-react/31-password-generator' element={<PasswordGenerator />} />
       <Route path='/50projects-react/32-good-cheap-fast' element={<GoodCheapFast />} />
+      <Route path='/50projects-react/33-notes-app' element={<NotesApp />} />
 
       <Route path='*' element={<App />} />
     </Routes>
