@@ -7,6 +7,8 @@
   flex-wrap: wrap;
   padding-top: 3rem;
   min-height: 100vh;
+  padding: 6rem 2rem;
+  gap: 2rem;
 }
 
 .add-note-33 {
@@ -27,10 +29,10 @@
 .note-33 {
   background-color: #fff;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-  margin: 3rem 2rem;
   height: 40rem;
   width: 40rem;
   overflow: auto;
+  border-radius: var(--border-radius);
 }
 .note-33 .tools-33 {
   background-color: #9ec862;
