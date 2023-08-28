@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 .body-33 {
-  background-color: #7bdaf3;
+  background-color: #14333c85;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -9,13 +9,14 @@
   min-height: 100vh;
   padding: 6rem 2rem;
   gap: 2rem;
+  transition: flex-wrap 0.3s ease-in-out;
 }
 
 .add-note-33 {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background-color: #9ec862;
+  background-color: #faad42;
   color: #fff;
   border-radius: var(--border-radius);
   padding: 0.5rem 1rem;
@@ -35,18 +36,17 @@
   border-radius: var(--border-radius);
 }
 .note-33 .tools-33 {
-  background-color: #9ec862;
+  background-color: #faad42;
   display: flex;
   justify-content: flex-end;
   padding: 1rem;
-  gap: 2rem;
 }
 .note-33 .tools-33 button {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
-  margin-left: 0.5rem;
+  margin-right: 2rem;
 }
 .note-33 textarea {
   font-family: inherit;
