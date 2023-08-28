@@ -159,6 +159,10 @@
       <td align="center">32</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/32-good-cheap-fast">Good Cheap Fast</a></td>
     </tr>
+    <tr>
+      <td align="center">33</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/33-notes-app">Notes App</a></td>
+    </tr>
   </tbody>
 </table>
 
