@@ -163,6 +163,10 @@
       <td align="center">33</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/33-notes-app">Notes App</a></td>
     </tr>
+    <tr>
+      <td align="center">34</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/34-animated-countdown">Animated Countdown</a></td>
+    </tr>
   </tbody>
 </table>
 
