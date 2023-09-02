@@ -26,7 +26,7 @@ export default function AnimatedCountdown() {
       }, 1000);
     }
   }, [states.count]);
-  console.log(states.count)
+
   return (
     <div className='body-34'>
 
