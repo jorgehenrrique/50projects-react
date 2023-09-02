@@ -6,32 +6,40 @@ export default function AnimatedCountdown() {
     document.title = 'Animated Countdown';
   }, []);
 
-  const [count, setCount] = useState(3);
-  const [classis, setClassis] = useState('');
+  const [states, setStates] = useState({
+    count: 3,
+    class: ''
+  });
 
   useEffect(() => {
-    setClassis('in');
+    setStates(prev => ({
+      ...prev,
+      class: 'in'
+    }));
 
-    if (count > 0) {
+    if (states.count > 0) {
       setTimeout(() => {
-        setCount(count - 1);
+        setStates(prev => ({
+          ...prev,
+          count: prev.count - 1
+        }));
       }, 1000);
     }
-  }, [count]);
-
+  }, [states.count]);
+  console.log(states.count)
   return (
     <div className='body-34'>
 
-      <div className={`counter-34 ${count === 0 ? 'hide-34' : ''} `}>
+      <div className={`counter-34 ${states.count === 0 ? 'hide-34' : ''} `}>
         <div className="nums-34">
-          <span className={classis} onAnimationEnd={() => setClassis('out')}>{count}</span>
+          <span className={states.class} onAnimationEnd={() => setStates(prev => ({ ...prev, class: 'out' }))}>{states.count}</span>
         </div>
         <h4>Get Ready</h4>
       </div>
 
-      <div className={`final-34 ${count === 0 ? 'show-34' : ''}`}>
+      <div className={`final-34 ${states.count === 0 ? 'show-34' : ''}`}>
         <h1>GO</h1>
-        <button onClick={() => setCount(3)}>
+        <button onClick={() => setStates(prev => ({ ...prev, count: 3 }))}>
           <span>Replay</span>
         </button>
       </div>
