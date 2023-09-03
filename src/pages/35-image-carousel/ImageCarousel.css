@@ -42,3 +42,6 @@
 .buttons-container-35 button:hover {
   opacity: 0.9;
 }
+.buttons-container-35 button:active {
+  opacity: 1;
+}
