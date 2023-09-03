@@ -1,16 +1,13 @@
 body {
   height: fit-content;
   overflow: auto;
-  /* border: 4px solid rgb(0, 255, 132); */
 }
 /* * {
   outline: 2px solid rgba(184, 13, 13, 0.462);
 } */
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
   text-align: center;
-  /* border: 4px solid rgb(255, 0, 225); */
 }
 :root {
   --border-radius: 1.8rem;
@@ -32,11 +29,9 @@ body {
 }
 
 .item {
-  /* width: 30rem; */
   height: 20rem;
   flex-grow: 1;
   border: 1px solid #c0c0c06f;
-  /* box-shadow: 0 4px 8px #c0c0c06f; */
   border-radius: var(--border-radius);
   text-align: justify;
   word-wrap: break-word;
@@ -53,6 +48,6 @@ body {
 .item:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  /* background: linear-gradient(to bottom, #b4f3e975, #f4d6cc67, #f7e0b23c); */
+  background: linear-gradient(to bottom, #ffffff75, #00000020);
   color: #333;
 }
