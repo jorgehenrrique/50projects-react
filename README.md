@@ -167,6 +167,10 @@
       <td align="center">34</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/34-animated-countdown">Animated Countdown</a></td>
     </tr>
+    <tr>
+      <td align="center">35</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/35-image-carousel">Image Carousel</a></td>
+    </tr>
   </tbody>
 </table>
 
