@@ -20,7 +20,6 @@
   transition: all 0.3s linear;
   border: 1px solid #c0c0c06f;
   cursor: pointer;
-  /* border: none; */
   background: #fff;
 }
 
@@ -37,6 +36,6 @@
 }
 
 .back:hover {
-  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  box-shadow: 9px 9px 20px #d1d1d17d;
   transform: translateY(-2px);
 }
