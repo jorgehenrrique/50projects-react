@@ -7,3 +7,38 @@
   justify-content: center;
   height: 100vh;
 }
+
+.carousel-35 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 53rem;
+  width: 50rem;
+  overflow: hidden;
+}
+
+.image-container-35 {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-container-35 img {
+  width: 50rem;
+  height: 50rem;
+  object-fit: cover;
+}
+
+.buttons-container-35 {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons-container-35 button {
+  background-color: #8745ca;
+  color: #fff;
+  height: 3rem;
+  cursor: pointer;
+  width: 49.5%;
+  transition: all 0.2s ease-in-out;
+}
+.buttons-container-35 button:hover {
+  opacity: 0.9;
+}
