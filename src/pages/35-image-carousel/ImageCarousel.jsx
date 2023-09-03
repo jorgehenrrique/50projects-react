@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import './ImageCarousel.css';
 
@@ -27,26 +26,25 @@ export default function ImageCarousel() {
   }, []);
 
   const [index, setIndex] = useState(0);
-  console.log(index)
 
   useEffect(() => {
     const indexIntervel = setInterval(() => handleNext(), 2000);
 
-    return () => {
-      clearInterval(indexIntervel);
-    };
+    return () => clearInterval(indexIntervel);
   }, [index]);
 
   const handlePrev = () => {
     // if (index === 0) setIndex(imgsObj.length - 1);
     // else setIndex(index - 1);
-    setIndex(prevIndex => (prevIndex === 0 ? imgsObj.length - 1 : prevIndex - 1));
+    // Alternativa do codigo acima
+    setIndex(prev => (prev === 0 ? imgsObj.length - 1 : prev - 1));
   };
 
   const handleNext = () => {
     // if (index === imgsObj.length - 1) setIndex(0);
     // else setIndex(index + 1);
-    setIndex(prevIndex => (prevIndex === imgsObj.length - 1 ? 0 : prevIndex + 1));
+    // Alternativa do codigo acima
+    setIndex(prev => (prev === imgsObj.length - 1 ? 0 : prev + 1));
   };
 
   return (
@@ -54,11 +52,7 @@ export default function ImageCarousel() {
 
       <div className="carousel-35">
         <div className="image-container-35" style={{ transform: `translateX(${-index * 500}px)` }}>
-
-          {imgsObj.map((img, idx) => {
-            return <img key={idx} src={img.link} alt={img.alt} />
-          })}
-
+          {imgsObj.map((img, idx) => <img key={idx} src={img.link} alt={img.alt} />)}
         </div>
 
         <div className="buttons-container-35">
