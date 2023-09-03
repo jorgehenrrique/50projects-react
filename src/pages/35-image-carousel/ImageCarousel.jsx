@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from 'react';
 import './ImageCarousel.css';
 
 const imgsObj = [
@@ -25,22 +26,38 @@ export default function ImageCarousel() {
     document.title = 'Image Carousel';
   }, []);
 
-  const handlePrev = () => { };
-  const handleNext = () => { };
+  const [index, setIndex] = useState(0);
+  console.log(index)
+
+  useEffect(() => {
+    const indexIntervel = setInterval(() => handleNext(), 2000);
+
+    return () => {
+      clearInterval(indexIntervel);
+    };
+  }, [index]);
+
+  const handlePrev = () => {
+    // if (index === 0) setIndex(imgsObj.length - 1);
+    // else setIndex(index - 1);
+    setIndex(prevIndex => (prevIndex === 0 ? imgsObj.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    // if (index === imgsObj.length - 1) setIndex(0);
+    // else setIndex(index + 1);
+    setIndex(prevIndex => (prevIndex === imgsObj.length - 1 ? 0 : prevIndex + 1));
+  };
 
   return (
     <div className='body-35'>
 
       <div className="carousel-35">
-        <div className="image-container-35">
+        <div className="image-container-35" style={{ transform: `translateX(${-index * 500}px)` }}>
 
-          {/* {imgsObj.map((img, idx) => {
-            return <img key={idx} src={img.link}
-              alt={img.alt} />
-          })} */}
-
-          <img src={imgsObj[0].link}
-            alt={imgsObj[0].alt} />
+          {imgsObj.map((img, idx) => {
+            return <img key={idx} src={img.link} alt={img.alt} />
+          })}
 
         </div>
 
