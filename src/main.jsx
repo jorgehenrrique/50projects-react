@@ -38,6 +38,7 @@ import GoodCheapFast from './pages/32-good-cheap-fast/GoodCheapFast.jsx';
 import NotesApp from './pages/33-notes-app/NotesApp.jsx';
 import AnimatedCountdown from './pages/34-animated-countdown/AnimatedCountdown.jsx';
 import ImageCarousel from './pages/35-image-carousel/ImageCarousel.jsx';
+import Hoverboard from './pages/36-hoverboard/Hoverboard.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -82,6 +83,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/33-notes-app' element={<NotesApp />} />
       <Route path='/50projects-react/34-animated-countdown' element={<AnimatedCountdown />} />
       <Route path='/50projects-react/35-image-carousel' element={<ImageCarousel />} />
+      <Route path='/50projects-react/36-hoverboard' element={<Hoverboard />} />
 
       <Route path='*' element={<App />} />
     </Routes>

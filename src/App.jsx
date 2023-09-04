@@ -57,6 +57,7 @@ function App() {
       <NavLink className='item' to='./33-notes-app'>Notes App</NavLink>
       <NavLink className='item' to='./34-animated-countdown'>Animated Countdown</NavLink>
       <NavLink className='item' to='./35-image-carousel'>Image Carousel</NavLink>
+      <NavLink className='item' to='./36-hoverboard'>Hoverboard</NavLink>
 
     </div>
   )
