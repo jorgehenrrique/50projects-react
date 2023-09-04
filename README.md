@@ -175,6 +175,10 @@
       <td align="center">36</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/36-hoverboard">Hoverboard</a></td>
     </tr>
+    <tr>
+      <td align="center">37</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/37-pokedex">Pokedex</a></td>
+    </tr>
   </tbody>
 </table>
 
