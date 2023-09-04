@@ -38,12 +38,12 @@
   border-radius: 50%;
   width: 12rem;
   height: 12rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .pokemon-37 .img-container-37 img {
   max-width: 90%;
-  margin-top: 2rem;
 }
 
 .pokemon-37 .info-37 {

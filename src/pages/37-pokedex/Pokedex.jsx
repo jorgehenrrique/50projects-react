@@ -39,14 +39,12 @@ export default function Pokedex() {
     return () => setPokemonElements([]);
   }, []);
 
-
   const getPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const res = await fetch(url);
     const data = await res.json();
     createPokemonCard(data);
   }
-
 
   const createPokemonCard = (pokemon) => {
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
@@ -57,7 +55,7 @@ export default function Pokedex() {
 
     setPokemonElements(prevElements => [
       ...prevElements,
-      <div className="pokemon-37" style={{ backgroundColor: color }} key={id + name}>
+      <div className="pokemon-37" style={{ backgroundColor: color }} key={id}>
         <div className='img-container-37'>
           <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} alt={name} />
         </div>
