@@ -29,7 +29,7 @@ export default function Hoverboard() {
   for (let i = 0; i < SQUARES; i++) {
     squareElements.push(
       <div
-        className="square-36"
+        className="square-36" key={i}
         onMouseOver={(e) => setColor(e.target)}
         onMouseOut={(e) => removeColor(e.target)}
       ></div>
