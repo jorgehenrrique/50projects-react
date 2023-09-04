@@ -1,31 +1,27 @@
-/* eslint-disable no-unused-vars */
 import { useEffect } from 'react';
 import './Hoverboard.css';
 
 const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71'];
-const SQUARES = 500;
+const SQUARES = 900;
 
 export default function Hoverboard() {
   useEffect(() => {
     document.title = 'Hoverboard';
   }, []);
 
+  const getRandomColor = () => {
+    return colors[Math.floor(Math.random() * colors.length)];
+  };
+
   const setColor = (el) => {
-    console.log(el)
     const color = getRandomColor();
     el.style.background = color;
     el.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
   };
 
   const removeColor = (el) => {
-    console.log(el)
-
     el.style.background = '#1d1d1d';
     el.style.boxShadow = '0 0 2px #000';
-  };
-
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
   };
 
   const squareElements = [];
