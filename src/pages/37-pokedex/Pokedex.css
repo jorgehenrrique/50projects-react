@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+.body-37 {
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.body-37 h1 {
+  letter-spacing: 0.3rem;
+  margin: 2rem 0;
+}
+
+.poke-container-37 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.pokemon-37 {
+  background-color: #eee;
+  border-radius: 1rem;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pokemon-37 .img-container-37 {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  text-align: center;
+}
+
+.pokemon-37 .img-container-37 img {
+  max-width: 90%;
+  margin-top: 2rem;
+}
+
+.pokemon-37 .info-37 {
+  margin-top: 2rem;
+}
+
+.pokemon-37 .info-37 .number-37 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8em;
+}
+
+.pokemon-37 .info-37 .name-37 {
+  margin: 1.5rem 0 0.7rem;
+  letter-spacing: 0.1rem;
+}
