@@ -1,7 +1,7 @@
 {
   "name": "50projects-react",
   "private": true,
-  "version": "0.3.5",
+  "version": "0.3.6",
   "type": "module",
   "homepage": "https://jorgehenrrique.github.io/50projects-react",
   "scripts": {

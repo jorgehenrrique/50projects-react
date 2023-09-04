@@ -171,6 +171,10 @@
       <td align="center">35</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/35-image-carousel">Image Carousel</a></td>
     </tr>
+    <tr>
+      <td align="center">36</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/36-hoverboard">Hoverboard</a></td>
+    </tr>
   </tbody>
 </table>
 
