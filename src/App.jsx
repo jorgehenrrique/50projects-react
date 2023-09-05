@@ -60,6 +60,7 @@ function App() {
       <NavLink className='item' to='./36-hoverboard'>Hoverboard</NavLink>
       <NavLink className='item' to='./37-pokedex'>Pokedex</NavLink>
       <NavLink className='item' to='./38-mobile-tab-navigation'>Mobile Tab Navigation</NavLink>
+      <NavLink className='item' to='./39-password-strength-background'>Password Strength Background</NavLink>
 
     </div>
   )

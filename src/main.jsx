@@ -41,6 +41,7 @@ import ImageCarousel from './pages/35-image-carousel/ImageCarousel.jsx';
 import Hoverboard from './pages/36-hoverboard/Hoverboard.jsx';
 import Pokedex from './pages/37-pokedex/Pokedex.jsx';
 import MobileTabNavigation from './pages/38-mobile-tab-navigation/MobileTabNavigation.jsx';
+import PasswordStrengthBackground from './pages/39-password-strength-background/PasswordStrengthBackground.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -88,6 +89,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/36-hoverboard' element={<Hoverboard />} />
       <Route path='/50projects-react/37-pokedex' element={<Pokedex />} />
       <Route path='/50projects-react/38-mobile-tab-navigation' element={<MobileTabNavigation />} />
+      <Route path='/50projects-react/39-password-strength-background' element={<PasswordStrengthBackground />} />
 
       <Route path='*' element={<App />} />
     </Routes>
