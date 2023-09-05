@@ -49,12 +49,13 @@
   flex: 1;
   padding: 1rem;
   text-align: center;
+  font-weight: bold;
 }
 .phone-38 nav ul li p {
   font-size: 1.4rem;
   margin: 0.2rem 0;
 }
 .phone-38 nav ul li:hover,
-.phone-38 nav ul li:active {
+.phone-38 nav ul li.active-38 {
   color: #8e44ad;
 }
