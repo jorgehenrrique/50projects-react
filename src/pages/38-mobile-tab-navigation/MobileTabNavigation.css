@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.body-38 {
+  background-color: #111;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.phone-38 {
+  position: relative;
+  overflow: hidden;
+  border: 0.3rem solid #eee;
+  border-radius: 1.5rem;
+  height: 60rem;
+  width: 34rem;
+}
+.phone-38 img {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 6rem);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+.phone-38 img.show-38 {
+  opacity: 1;
+}
+
+.phone-38 nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+.phone-38 nav ul {
+  background-color: #fff;
+  display: flex;
+  height: 6rem;
+}
+.phone-38 nav ul li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+.phone-38 nav ul li p {
+  font-size: 1.4rem;
+  margin: 0.2rem 0;
+}
+.phone-38 nav ul li:hover,
+.phone-38 nav ul li:active {
+  color: #8e44ad;
+}
