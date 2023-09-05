@@ -183,6 +183,10 @@
       <td align="center">38</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/38-mobile-tab-navigation">Mobile Tab Navigation</a></td>
     </tr>
+    <tr>
+      <td align="center">39</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/39-password-strength-background">Password Strength Background</a></td>
+    </tr>
   </tbody>
 </table>
 
