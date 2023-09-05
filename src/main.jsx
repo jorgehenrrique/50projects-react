@@ -40,6 +40,7 @@ import AnimatedCountdown from './pages/34-animated-countdown/AnimatedCountdown.j
 import ImageCarousel from './pages/35-image-carousel/ImageCarousel.jsx';
 import Hoverboard from './pages/36-hoverboard/Hoverboard.jsx';
 import Pokedex from './pages/37-pokedex/Pokedex.jsx';
+import MobileTabNavigation from './pages/38-mobile-tab-navigation/MobileTabNavigation.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -86,6 +87,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/35-image-carousel' element={<ImageCarousel />} />
       <Route path='/50projects-react/36-hoverboard' element={<Hoverboard />} />
       <Route path='/50projects-react/37-pokedex' element={<Pokedex />} />
+      <Route path='/50projects-react/38-mobile-tab-navigation' element={<MobileTabNavigation />} />
 
       <Route path='*' element={<App />} />
     </Routes>
