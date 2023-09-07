@@ -9,24 +9,17 @@ export default function BackgroundBoxes3D() {
   const [classBig, setClassBig] = useState(true);
   let box = [];
 
-  const handleBox = () => {
-    console.log('oi')
-    setClassBig(!classBig);
-  };
-
-  useEffect(() => {
-    // createBoxes();
-  }, []);
-
-  // const createBoxes = () => {
   for (let i = 0; i < 4; i++) {
     for (let j = 0; j < 4; j++) {
-      box.push(<div className="box-40"
+      box.push(<div key={box.length} className="box-40"
         style={{ backgroundPosition: `${-j * 125}px ${-i * 125}px` }}></div>);
     }
   }
-  // };
-  console.log(box);
+
+  const handleBox = () => {
+    setClassBig(!classBig);
+  };
+
   return (
     <div className='body-40'>
 
