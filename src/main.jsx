@@ -43,6 +43,7 @@ import Pokedex from './pages/37-pokedex/Pokedex.jsx';
 import MobileTabNavigation from './pages/38-mobile-tab-navigation/MobileTabNavigation.jsx';
 import PasswordStrengthBackground from './pages/39-password-strength-background/PasswordStrengthBackground.jsx';
 import BackgroundBoxes3D from './pages/40-3d-boxes-background/3dBackgroundBoxes.jsx';
+import VerifyAccountUi from './pages/41-verify-account-ui/VerifyAccountUi.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -92,6 +93,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/38-mobile-tab-navigation' element={<MobileTabNavigation />} />
       <Route path='/50projects-react/39-password-strength-background' element={<PasswordStrengthBackground />} />
       <Route path='/50projects-react/40-3d-boxes-background' element={<BackgroundBoxes3D />} />
+
+      <Route path='/50projects-react/41-verify-account-ui' element={<VerifyAccountUi />} />
 
       <Route path='*' element={<App />} />
     </Routes>
