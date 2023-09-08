@@ -191,6 +191,10 @@
       <td align="center">40</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/40-3d-boxes-background">3d Background Boxes</a></td>
     </tr>
+    <tr>
+      <td align="center">41</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/41-verify-account-ui">Verify Account Ui</a></td>
+    </tr>
   </tbody>
 </table>
 
