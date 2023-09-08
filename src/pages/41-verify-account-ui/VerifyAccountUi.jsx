@@ -31,7 +31,8 @@ export default function VerifyAccountUi() {
     } else if (e.key === 'Backspace') {
       if (idx === 0) return;
       setTimeout(() => codes[idx - 1].focus(), 10);
-    } else if (isNaN(e.key)) {
+    } else if (isNaN(e.key) && e.key !== 'Tab' && e.key !== 'Shift'
+      && e.key !== 'Enter' && e.key !== 'ArrowUp' && e.key !== 'ArrowDown') {
       setTimeout(() => e.target.value = '', 1);
     }
   };
