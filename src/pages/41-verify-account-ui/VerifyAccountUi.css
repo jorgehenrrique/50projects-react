@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+.body-41 {
+  background-color: #fbfcfe;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-41 {
+  background-color: #fff;
+  border: 0.3rem #000 solid;
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  max-width: 100rem;
+  text-align: center;
+}
+.container-41 h2 {
+  margin-bottom: 3rem;
+}
+.container-41 p {
+  line-height: 2rem;
+}
+
+.code-container-41 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.code-41 {
+  /* o cursor ficará invisível na caixa de texto ou área de texto */
+  caret-color: transparent;
+  border: 0.1rem solid #eee;
+  border-radius: var(--border-radius);
+  font-size: 7.5rem;
+  height: 12rem;
+  width: 9rem;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: 300;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.code-41::-webkit-outer-spin-button,
+.code-41::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.code-41:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.container-41 small {
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 1rem;
+  line-height: 2rem;
+  max-width: 40rem;
+  color: #777;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 600px) {
+  .code-container-41 {
+    flex-wrap: wrap;
+  }
+
+  .code-41 {
+    font-size: 6rem;
+    height: 8rem;
+    max-width: 7rem;
+  }
+}
