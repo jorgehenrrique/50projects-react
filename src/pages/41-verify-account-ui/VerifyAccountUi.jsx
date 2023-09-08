@@ -19,11 +19,11 @@ export default function VerifyAccountUi() {
       key={i}
       type="number"
       className='code-41'
-      onKeyDown={(e) => handleNumbers(e, i)}
+      onKeyDown={(e) => handleCodes(e, i)}
       placeholder="0" min="0" max="9" required />)
   }
 
-  const handleNumbers = (e, idx) => {
+  const handleCodes = (e, idx) => {
     if (e.key >= 0 && e.key <= 9) {
       e.target.value = '';
       if (idx === codes.length - 1) return;
@@ -32,8 +32,7 @@ export default function VerifyAccountUi() {
       if (idx === 0) return;
       setTimeout(() => codes[idx - 1].focus(), 10);
     } else if (isNaN(e.key)) {
-      e.target.value = '';
-      return;
+      setTimeout(() => e.target.value = '', 1);
     }
   };
 
