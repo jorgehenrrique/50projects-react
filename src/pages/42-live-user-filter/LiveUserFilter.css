@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.body-42 {
+  background-color: #f8f9fd;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-42 {
+  box-shadow: 3px 3px 10px #00000033;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  width: 30rem;
+}
+.container-42 header {
+  background-color: #3e57db;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: justify;
+}
+.container-42 header h4 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.container-42 header small {
+  display: inline-block;
+  margin: 0.5rem 0 2rem;
+  opacity: 0.8;
+}
+.container-42 header input {
+  background-color: #0000004d;
+  border-radius: var(--border-radius);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  width: 100%;
+}
+.container-42 header input:focus {
+  background-color: #00000035;
+}
+
+.container-42 ul {
+  background-color: #fff;
+  /* list-style-type: none; */
+  /* margin: 0; */
+  /* padding: 0; */
+  max-height: 40rem;
+  overflow-y: auto;
+}
+.container-42 ul li {
+  display: flex;
+  padding: 2rem;
+}
+.container-42 ul img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+}
+
+.container-42 ul .user-info-42 {
+  text-align: justify;
+  margin-left: 1rem;
+}
+.container-42 ul .user-info-42 h4 {
+  margin: 0 0 1rem;
+}
+.container-42 ul .user-info-42 p {
+  font-size: 1.2rem;
+}
+
+.container-42 ul li:not(:last-of-type) {
+  border-bottom: 0.1rem solid #eee;
+}
+.container-42 ul li.hide-42 {
+  display: none;
+}
