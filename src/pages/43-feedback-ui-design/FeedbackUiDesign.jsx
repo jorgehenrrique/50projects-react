@@ -24,14 +24,6 @@ export default function FeedbackUiDesign() {
   const [active, setActive] = useState(ratings.length - 1);
   const [send, setSend] = useState(false);
 
-  function handleActive(idx) {
-    setActive(idx);
-  }
-
-  function handleSend() {
-    setSend(true);
-  }
-
   return (<div className='body-43'>
 
     <div className="panel-container-43">
@@ -41,13 +33,13 @@ export default function FeedbackUiDesign() {
           <div className="ratings-container-43">
             {ratings.map((rating, idx) => {
               return (
-                <div key={idx} className={`rating-43 ${active === idx ? 'active-43' : ''}`} onClick={() => handleActive(idx)}>
+                <div key={idx} className={`rating-43 ${active === idx ? 'active-43' : ''}`} onClick={() => setActive(idx)}>
                   <img src={rating.src} alt={rating.msg} />
                   <small>{rating.msg}</small>
                 </div>)
             })}
           </div>
-          <button onClick={handleSend}>Send Review</button>
+          <button onClick={() => setSend(true)}>Send Review</button>
         </>}
 
       {send &&
