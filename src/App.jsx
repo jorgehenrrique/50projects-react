@@ -64,6 +64,7 @@ function App() {
       <NavLink className='item' to='./40-3d-boxes-background'>3D Background Boxes</NavLink>
 
       <NavLink className='item' to='./41-verify-account-ui'>Verify Account Ui</NavLink>
+      <NavLink className='item' to='./42-live-user-filter'>Live User Filter</NavLink>
 
     </div>
   )

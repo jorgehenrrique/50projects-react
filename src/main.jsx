@@ -44,6 +44,7 @@ import MobileTabNavigation from './pages/38-mobile-tab-navigation/MobileTabNavig
 import PasswordStrengthBackground from './pages/39-password-strength-background/PasswordStrengthBackground.jsx';
 import BackgroundBoxes3D from './pages/40-3d-boxes-background/3dBackgroundBoxes.jsx';
 import VerifyAccountUi from './pages/41-verify-account-ui/VerifyAccountUi.jsx';
+import LiveUserFilter from './pages/42-live-user-filter/LiveUserFilter.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -95,6 +96,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/40-3d-boxes-background' element={<BackgroundBoxes3D />} />
 
       <Route path='/50projects-react/41-verify-account-ui' element={<VerifyAccountUi />} />
+      <Route path='/50projects-react/42-live-user-filter' element={<LiveUserFilter />} />
 
       <Route path='*' element={<App />} />
     </Routes>
