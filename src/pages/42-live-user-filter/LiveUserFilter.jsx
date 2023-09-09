@@ -27,21 +27,14 @@ export default function LiveUserFilter() {
       });
   }
 
-  function handleSearch(e) {
+  function handleSearch() {
     const search = searchRef.current.value.trim().toLowerCase();
 
-    const dataFiltered = data.filter(user => {
+    const dataFiltered = dataBkp.filter(user => {
       return user.name.first.toLowerCase().includes(search) ||
         user.name.last.toLowerCase().includes(search);
     });
 
-
-    if (e.key === 'Backspace') {
-      console.log('delete')
-      return setData(dataBkp);
-    }
-    // console.log(dataFiltered);
-    // console.log(dataBkp);
     setData(dataFiltered);
   }
 
@@ -52,7 +45,7 @@ export default function LiveUserFilter() {
         <header>
           <h4>Live User Filter</h4>
           <small>Search by name and/or location</small>
-          <input type="text" placeholder="Search" ref={searchRef} onKeyDown={handleSearch} />
+          <input type="text" placeholder="Search" ref={searchRef} onChange={handleSearch} />
         </header>
 
         <ul>
