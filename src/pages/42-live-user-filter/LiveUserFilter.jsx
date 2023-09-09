@@ -31,8 +31,10 @@ export default function LiveUserFilter() {
     const search = searchRef.current.value.trim().toLowerCase();
 
     const dataFiltered = dataBkp.filter(user => {
-      return user.name.first.toLowerCase().includes(search) ||
-        user.name.last.toLowerCase().includes(search);
+      return user.name.first.toLowerCase().includes(search)
+        || user.name.last.toLowerCase().includes(search)
+        || user.location.city.toLowerCase().includes(search)
+        || user.location.country.toLowerCase().includes(search);
     });
 
     setData(dataFiltered);
