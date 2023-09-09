@@ -203,6 +203,10 @@
       <td align="center">43</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/43-feedback-ui-design">Feedback Ui Design</a></td>
     </tr>
+    <tr>
+      <td align="center">44</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/44-custom-range-slider">Custom Range Slider</a></td>
+    </tr>
   </tbody>
 </table>
 

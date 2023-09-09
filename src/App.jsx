@@ -66,6 +66,7 @@ function App() {
       <NavLink className='item' to='./41-verify-account-ui'>41-Verify Account Ui</NavLink>
       <NavLink className='item' to='./42-live-user-filter'>42-Live User Filter</NavLink>
       <NavLink className='item' to='./43-feedback-ui-design'>43-Feedback Ui Design</NavLink>
+      <NavLink className='item' to='./44-custom-range-slider'>44-Custom Range Slider</NavLink>
 
     </div>
   )
