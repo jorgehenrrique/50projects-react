@@ -195,6 +195,10 @@
       <td align="center">41</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/41-verify-account-ui">Verify Account Ui</a></td>
     </tr>
+    <tr>
+      <td align="center">42</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/42-live-user-filter">Live User Filter</a></td>
+    </tr>
   </tbody>
 </table>
 
