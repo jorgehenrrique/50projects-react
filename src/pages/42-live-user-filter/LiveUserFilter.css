@@ -72,10 +72,6 @@
 .container-42 ul .user-info-42 p {
   font-size: 1.2rem;
 }
-
 .container-42 ul li:not(:last-of-type) {
   border-bottom: 0.1rem solid #eee;
-}
-.container-42 ul li.hide-42 {
-  display: none;
 }
