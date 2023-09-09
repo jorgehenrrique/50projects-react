@@ -21,42 +21,43 @@ export default function FeedbackUiDesign() {
     document.title = 'Feedback Ui Design';
   }, []);
 
-  const [active, setActive] = useState(-1);
-
-  console.log(ratings)
+  const [active, setActive] = useState(ratings.length - 1);
+  const [send, setSend] = useState(false);
 
   function handleActive(idx) {
     setActive(idx);
   }
 
+  function handleSend() {
+    setSend(true);
+  }
+
   return (<div className='body-43'>
 
     <div className="panel-container-43">
-      <strong>How satisfied are you with our <br /> customer support performance?</strong>
-      <div className="ratings-container-43">
-        {/* <div className="rating-43">
-          <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png" alt="" />
-          <small>Unhappy</small>
-        </div>
+      {!send &&
+        <>
+          <strong>How satisfied are you with our <br /> customer support performance?</strong>
+          <div className="ratings-container-43">
+            {ratings.map((rating, idx) => {
+              return (
+                <div key={idx} className={`rating-43 ${active === idx ? 'active-43' : ''}`} onClick={() => handleActive(idx)}>
+                  <img src={rating.src} alt={rating.msg} />
+                  <small>{rating.msg}</small>
+                </div>)
+            })}
+          </div>
+          <button onClick={handleSend}>Send Review</button>
+        </>}
 
-        <div className="rating-43">
-          <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png" alt="" />
-          <small>Neutral</small>
-        </div>
+      {send &&
+        <>
+          <i className='heart-43'>♥️</i>
+          <strong>Thank You!</strong>
 
-        <div className="rating-43 active-43">
-          <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png" alt="" />
-          <small>Satisfied</small>
-        </div> */}
-        {ratings.map((rating, idx) => {
-          return (
-            <div key={idx} className={`rating-43 ${active === idx ? 'active-43' : ''}`} onClick={() => handleActive(idx)}>
-              <img src={rating.src} alt={rating.msg} />
-              <small>{rating.msg}</small>
-            </div>)
-        })}
-      </div>
-      <button>Send Review</button>
+          <strong>Feedback: {ratings[active].msg} </strong>
+          <p>We&#39;ll use your feedback to improve our customer support</p>
+        </>}
     </div>
 
   </div>);

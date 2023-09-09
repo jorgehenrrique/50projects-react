@@ -24,7 +24,10 @@
   max-width: 40rem;
 }
 .panel-container-43 strong {
-  line-height: 2rem;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #555;
 }
 
 .ratings-container-43 {
@@ -71,8 +74,12 @@
   transform: scale(1);
 }
 
-.fa-heart {
+.heart-43 {
   color: red;
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.panel-container-43 p {
+  margin: 2rem 0;
+  font-size: 1.8rem;
 }
