@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './LiveUserFilter.css';
 
 export default function LiveUserFilter() {
@@ -7,6 +7,9 @@ export default function LiveUserFilter() {
   }, []);
 
   const [data, setData] = useState(null);
+  const [dataBkp, setDataBkp] = useState(null);
+
+  const searchRef = useRef('');
 
   useEffect(() => {
     getData();
@@ -18,9 +21,29 @@ export default function LiveUserFilter() {
         if (result.status === 200 && result.ok) {
           return result.json();
         }
-      }).then(result => setData(result.results));
+      }).then(result => {
+        setData(result.results);
+        setDataBkp(result.results);
+      });
   }
-  console.log(data);
+
+  function handleSearch(e) {
+    const search = searchRef.current.value.trim().toLowerCase();
+
+    const dataFiltered = data.filter(user => {
+      return user.name.first.toLowerCase().includes(search) ||
+        user.name.last.toLowerCase().includes(search);
+    });
+
+
+    if (e.key === 'Backspace') {
+      console.log('delete')
+      return setData(dataBkp);
+    }
+    // console.log(dataFiltered);
+    // console.log(dataBkp);
+    setData(dataFiltered);
+  }
 
   return (
     <div className='body-42'>
@@ -29,14 +52,14 @@ export default function LiveUserFilter() {
         <header>
           <h4>Live User Filter</h4>
           <small>Search by name and/or location</small>
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search" ref={searchRef} onKeyDown={handleSearch} />
         </header>
 
         <ul>
           {!data && <li><h3>Loading...</h3></li>}
-          {data && data.map((user, idx) => {
+          {data && data.map(user => {
             return (
-              <li key={idx}>
+              <li key={user.login.username}>
                 <img src={user.picture.large} alt={user.name.first} />
                 <div className='user-info-42'>
                   <h4>{user.name.first} {user.name.last}</h4>
