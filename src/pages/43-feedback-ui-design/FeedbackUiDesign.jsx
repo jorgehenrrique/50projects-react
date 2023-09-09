@@ -52,7 +52,7 @@ export default function FeedbackUiDesign() {
 
       {send &&
         <>
-          <i className='heart-43'>♥️</i>
+          <span className='heart-43'>♥️</span>
           <strong>Thank You!</strong>
 
           <strong>Feedback: {ratings[active].msg} </strong>
