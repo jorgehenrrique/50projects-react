@@ -199,6 +199,10 @@
       <td align="center">42</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/42-live-user-filter">Live User Filter</a></td>
     </tr>
+    <tr>
+      <td align="center">43</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/43-feedback-ui-design">Feedback Ui Design</a></td>
+    </tr>
   </tbody>
 </table>
 
