@@ -8,6 +8,6 @@ export default function CustomRangeSlider() {
 
   return (
     <div className='body-44'>
-
+      oi
     </div>);
 }
