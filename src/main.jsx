@@ -47,6 +47,7 @@ import VerifyAccountUi from './pages/41-verify-account-ui/VerifyAccountUi.jsx';
 import LiveUserFilter from './pages/42-live-user-filter/LiveUserFilter.jsx';
 import FeedbackUiDesign from './pages/43-feedback-ui-design/FeedbackUiDesign.jsx';
 import CustomRangeSlider from './pages/44-custom-range-slider/CustomRangeSlider.jsx';
+import NetflixMobileNavigation from './pages/45-netflix-mobile-navigation/NetflixMobileNavigation.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -101,6 +102,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/42-live-user-filter' element={<LiveUserFilter />} />
       <Route path='/50projects-react/43-feedback-ui-design' element={<FeedbackUiDesign />} />
       <Route path='/50projects-react/44-custom-range-slider' element={<CustomRangeSlider />} />
+      <Route path='/50projects-react/45-netflix-mobile-navigation' element={<NetflixMobileNavigation />} />
 
       <Route path='*' element={<App />} />
     </Routes>

@@ -8,6 +8,6 @@ export default function NetflixMobileNavigation() {
 
   return (
     <div className='body-45'>
-
+      fd
     </div>);
 }
