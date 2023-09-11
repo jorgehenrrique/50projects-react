@@ -207,6 +207,10 @@
       <td align="center">44</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/44-custom-range-slider">Custom Range Slider</a></td>
     </tr>
+    <tr>
+      <td align="center">45</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/45-netflix-mobile-navigation">Netflix Mobile Navigation</a></td>
+    </tr>
   </tbody>
 </table>
 
