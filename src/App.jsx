@@ -69,6 +69,7 @@ function App() {
       <NavLink className='item' to='./44-custom-range-slider'>44-Custom Range Slider</NavLink>
       <NavLink className='item' to='./45-netflix-mobile-navigation'>45-Netflix Mobile Navigation</NavLink>
       <NavLink className='item' to='./46-quiz-app'>46-Quiz App</NavLink>
+      <NavLink className='item' to='./47-testimonial-box-switcher'>47-Testimonial Box Switcher</NavLink>
 
     </div>
   )
