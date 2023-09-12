@@ -67,20 +67,16 @@ export default function QuizApp() {
   };
 
   useEffect(() => {
-    if (quizFinished) {
-      return;
-    }
+    if (quizFinished) return;
   }, [idx, quizFinished]);
 
   function handleQuestions() {
-    if (quizFinished || selectedAnswer === null) {
-      return;
-    }
+    if (quizFinished || selectedAnswer === null) return;
 
     if (selectedAnswer === correct) {
-      setQuizState((prevState) => ({
-        ...prevState,
-        corrects: prevState.corrects + 1,
+      setQuizState((prev) => ({
+        ...prev,
+        corrects: prev.corrects + 1,
       }));
     }
 
@@ -88,14 +84,14 @@ export default function QuizApp() {
     questionRefs[selectedAnswer].current.checked = false;
 
     if (idx < quizData.length - 1) {
-      setQuizState((prevState) => ({
-        ...prevState,
-        idx: prevState.idx + 1,
+      setQuizState((prev) => ({
+        ...prev,
+        idx: prev.idx + 1,
         selectedAnswer: null,
       }));
     } else {
-      setQuizState((prevState) => ({
-        ...prevState,
+      setQuizState((prev) => ({
+        ...prev,
         quizFinished: true,
       }));
     }
@@ -125,17 +121,15 @@ export default function QuizApp() {
                   <li key={key}>
                     <input
                       type="radio"
-                      name="answer"
                       id={key}
                       ref={questionRefs[key]}
-                      className="answer"
                       checked={selectedAnswer === key}
-                      onChange={() => setQuizState((prevState) => ({
-                        ...prevState,
+                      onChange={() => setQuizState((prev) => ({
+                        ...prev,
                         selectedAnswer: key,
                       }))}
                     />
-                    <label htmlFor={key} id={`${key}_text`}>{value}</label>
+                    <label htmlFor={key}>{value}</label>
                   </li>
                 ))}
               </ul>
