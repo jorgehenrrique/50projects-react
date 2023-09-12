@@ -215,6 +215,10 @@
       <td align="center">46</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/46-quiz-app">Quiz App</a></td>
     </tr>
+    <tr>
+      <td align="center">47</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/47-testimonial-box-switcher">Testimonial Box Switcher</a></td>
+    </tr>
   </tbody>
 </table>
 
