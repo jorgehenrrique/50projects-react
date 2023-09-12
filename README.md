@@ -211,6 +211,10 @@
       <td align="center">45</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/45-netflix-mobile-navigation">Netflix Mobile Navigation</a></td>
     </tr>
+    <tr>
+      <td align="center">46</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/46-quiz-app">Quiz App</a></td>
+    </tr>
   </tbody>
 </table>
 
