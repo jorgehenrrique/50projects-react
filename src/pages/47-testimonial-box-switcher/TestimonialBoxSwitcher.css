@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.body-48 {
+.body-47 {
   background-color: #444;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -12,7 +12,7 @@
   padding: 1rem;
 }
 
-.testimonial-container-48 {
+.testimonial-container-47 {
   background-color: #476ce4;
   color: #fff;
   border-radius: 1.5rem;
@@ -23,7 +23,7 @@
   box-shadow: 0 0.8rem 2rem #333;
 }
 
-.progress-bar-48 {
+.progress-bar-47 {
   background-color: #fff;
   height: 0.4rem;
   margin: 1rem 0;
@@ -32,42 +32,42 @@
   transform-origin: left;
 }
 
-.quote-right-48,
-.quote-left-48 {
+.quote-right-47,
+.quote-left-47 {
   color: #ffffff4d;
   font-size: 8.8rem;
   position: absolute;
   top: 6rem;
 }
-.quote-right-48 {
+.quote-right-47 {
   left: 4rem;
 }
-.quote-left-48 {
+.quote-left-47 {
   right: 4rem;
 }
 
-.testimonial-container-48 p {
+.testimonial-container-47 p {
   line-height: 2.8rem;
   text-align: justify;
 }
 
-.user-48 {
+.user-47 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
 }
-.user-48 img {
+.user-47 img {
   border-radius: 50%;
   height: 7.5rem;
   width: 7.5rem;
   object-fit: cover;
 }
 
-.user-details-48 {
+.user-details-47 {
   margin-left: 1rem;
 }
-.user-details-48 p {
+.user-details-47 p {
   font-weight: normal;
   margin: 1rem 0;
 }
@@ -79,12 +79,12 @@
 }
 
 @media (max-width: 768px) {
-  .testimonial-container-48 {
+  .testimonial-container-47 {
     padding: 2rem 3rem;
   }
 
-  .quote-right-48,
-  .quote-left-48 {
+  .quote-right-47,
+  .quote-left-47 {
     display: none;
   }
 }

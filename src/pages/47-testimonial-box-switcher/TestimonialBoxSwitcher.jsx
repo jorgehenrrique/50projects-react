@@ -74,17 +74,17 @@ export default function TestimonialBoxSwitcher() {
   }, [idx]);
 
   return (
-    <div className='body-48'>
+    <div className='body-47'>
 
-      <div className="testimonial-container-48">
-        <div className="progress-bar-48"></div>
-        <div className="quote-right-48">”</div>
-        <div className="quote-left-48">“</div>
+      <div className="testimonial-container-47">
+        <div className="progress-bar-47"></div>
+        <div className="quote-right-47">”</div>
+        <div className="quote-left-47">“</div>
         <p>{text}</p>
 
-        <div className="user-48">
+        <div className="user-47">
           <img src={photo} alt="user" />
-          <div className="user-details-48">
+          <div className="user-details-47">
             <h4>{name}</h4>
             <p>{position}</p>
           </div>
