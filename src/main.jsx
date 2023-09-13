@@ -50,6 +50,7 @@ import CustomRangeSlider from './pages/44-custom-range-slider/CustomRangeSlider.
 import NetflixMobileNavigation from './pages/45-netflix-mobile-navigation/NetflixMobileNavigation.jsx';
 import QuizApp from './pages/46-quiz-app/QuizApp.jsx';
 import TestimonialBoxSwitcher from './pages/47-testimonial-box-switcher/TestimonialBoxSwitcher.jsx';
+import RandomImageFeed from './pages/48-random-image-generator/RandomImageFeed.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -107,6 +108,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/45-netflix-mobile-navigation' element={<NetflixMobileNavigation />} />
       <Route path='/50projects-react/46-quiz-app' element={<QuizApp />} />
       <Route path='/50projects-react/47-testimonial-box-switcher' element={<TestimonialBoxSwitcher />} />
+      <Route path='/50projects-react/48-random-image-generator' element={<RandomImageFeed />} />
 
       <Route path='*' element={<App />} />
     </Routes>
