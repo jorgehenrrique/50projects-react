@@ -31,4 +31,8 @@
   width: 30rem;
   max-width: 100%;
   border-radius: var(--border-radius);
+  transition: all 0.2s linear;
+}
+.body-48 div img:hover {
+  transform: scale(1.06);
 }
