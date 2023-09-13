@@ -66,13 +66,12 @@ export default function TestimonialBoxSwitcher() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (idx > testimonials.length - 1) setIdx(0);
+      if (idx >= testimonials.length - 1) setIdx(0);
       else setIdx(idx + 1);
     }, 10000);
 
     return () => clearInterval(interval);
   }, [idx]);
-  console.log(idx)
 
   return (
     <div className='body-48'>
