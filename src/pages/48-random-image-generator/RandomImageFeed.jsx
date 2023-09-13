@@ -9,5 +9,8 @@ export default function RandomImageFeed() {
   return (
     <div className='body-48'>
 
+      <h1>Random Image Feed</h1>
+      <div></div>
+
     </div>);
 }
