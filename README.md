@@ -219,6 +219,10 @@
       <td align="center">47</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/47-testimonial-box-switcher">Testimonial Box Switcher</a></td>
     </tr>
+    <tr>
+      <td align="center">48</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/48-random-image-generator">Random Image Feed</a></td>
+    </tr>
   </tbody>
 </table>
 
