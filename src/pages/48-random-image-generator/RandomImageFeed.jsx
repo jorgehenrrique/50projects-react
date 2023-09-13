@@ -12,7 +12,7 @@ export default function RandomImageFeed() {
   const [imgs, setImgs] = useState([]);
 
   const getRandomSize = useCallback(() => {
-    return `${getRandomNr()}x${getRandomNr()}`
+    return `${getRandomNr()}x${getRandomNr()}`;
   }, []);
 
   useEffect(() => {
