@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .body-48 {
-  background-color: #f4f4f4;
+  background-color: #444;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,7 @@
   padding: 5rem 8rem;
   max-width: 76.8rem;
   position: relative;
+  box-shadow: 0 0.8rem 2rem #333;
 }
 
 .progress-bar-48 {
