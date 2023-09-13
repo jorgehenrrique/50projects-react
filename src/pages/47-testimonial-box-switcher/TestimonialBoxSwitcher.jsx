@@ -80,12 +80,10 @@ export default function TestimonialBoxSwitcher() {
         <div className="progress-bar-48"></div>
         <div className="quote-right-48">”</div>
         <div className="quote-left-48">“</div>
-        <p>
-          {text}
-        </p>
+        <p>{text}</p>
+
         <div className="user-48">
           <img src={photo} alt="user" />
-
           <div className="user-details-48">
             <h4>{name}</h4>
             <p>{position}</p>
