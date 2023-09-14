@@ -9,7 +9,7 @@ export default function TodoList() {
   const [input, setInput] = useState('');
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) ?? []);
 
-  const handleform = (e) => {
+  const handTodos = (e) => {
     e.preventDefault();
 
     if (input.trim() !== '') {
@@ -41,7 +41,7 @@ export default function TodoList() {
     <div className='body-49'>
 
       <h1>todos</h1>
-      <form onSubmit={handleform}>
+      <form onSubmit={handTodos}>
         <input type="text" className="input"
           placeholder="Enter your todo" autoComplete="off"
           value={input} onChange={(e) => setInput(e.target.value)} />
