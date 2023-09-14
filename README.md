@@ -223,6 +223,10 @@
       <td align="center">48</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/48-random-image-generator">Random Image Feed</a></td>
     </tr>
+    <tr>
+      <td align="center">49</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/49-todo-list">Todo List</a></td>
+    </tr>
   </tbody>
 </table>
 
