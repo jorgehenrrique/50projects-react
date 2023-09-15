@@ -72,6 +72,7 @@ function App() {
       <NavLink className='item' to='./47-testimonial-box-switcher'>47-Testimonial Box Switcher</NavLink>
       <NavLink className='item' to='./48-random-image-generator'>48-Random Image Feed</NavLink>
       <NavLink className='item' to='./49-todo-list'>49-Todo List</NavLink>
+      <NavLink className='item' to='./50-insect-catch-game'>50-Insect Catch Game</NavLink>
 
     </div>
   )

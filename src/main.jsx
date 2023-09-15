@@ -52,6 +52,7 @@ import QuizApp from './pages/46-quiz-app/QuizApp.jsx';
 import TestimonialBoxSwitcher from './pages/47-testimonial-box-switcher/TestimonialBoxSwitcher.jsx';
 import RandomImageFeed from './pages/48-random-image-generator/RandomImageFeed.jsx';
 import TodoList from './pages/49-todo-list/TodoList.jsx';
+import InsectCatchGame from './pages/50-insect-catch-game/InsectCatchGame.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -111,6 +112,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/50projects-react/47-testimonial-box-switcher' element={<TestimonialBoxSwitcher />} />
       <Route path='/50projects-react/48-random-image-generator' element={<RandomImageFeed />} />
       <Route path='/50projects-react/49-todo-list' element={<TodoList />} />
+      <Route path='/50projects-react/50-insect-catch-game' element={<InsectCatchGame />} />
 
       <Route path='*' element={<App />} />
     </Routes>
