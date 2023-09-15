@@ -227,6 +227,10 @@
       <td align="center">49</td>
       <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/49-todo-list">Todo List</a></td>
     </tr>
+    <tr>
+      <td align="center">50</td>
+      <td><a href="https://github.com/jorgehenrrique/50projects-react/tree/main/src/pages/50-insect-catch-game">Insect Catch Game</a></td>
+    </tr>
   </tbody>
 </table>
 
