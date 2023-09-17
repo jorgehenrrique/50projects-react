@@ -20,7 +20,7 @@
 
 ### Diretórios dos Projetos
 
-- Abaixo estão os projetos atualmente em desenvolvimento:
+- Abaixo estão os 50 projetos.
 - Clique para navegar ao diretório.
 
 <table>
